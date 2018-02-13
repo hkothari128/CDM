@@ -1,0 +1,2 @@
+src_column,src_table,dest_column,dest_table
+state,ahs-mort-uttarakhand-nainital.csv,state,location

@@ -1,0 +1,9 @@
+-only 3 tables:concept,domain,measurement
+-domain drop down, to be specified by user
+-new concept values inherit domain from their column domains
+-all non-integral data will become concept
+-measurement has 3-4 columns, 
+- add another table entity, for which measurements will be taken
+- primary key of table to be mapped to entity
+- entity will have two columms, its own id and 'identified_by'
+- drop all other tables for now

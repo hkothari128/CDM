@@ -1,0 +1,120 @@
+Sl_no,Variable_name,Description
+1,id,id
+2,m_id,m_id
+3,client_m_id,client_m_id
+4,hl_id,hl_id
+5,state,State
+6,district,District
+7,rural,Rural/Urban
+8,stratum_code,Stratum
+9,psu_id,This field has been provided to hide the identification of record below District level. It is a seven digit number to uniquely identify each record.
+10,m_serial_no,Serial number
+11,deceased_sex,Sex of deceased
+12,date_of_death,Date of death
+13,month_of_death,Month of death
+14,year_of_death,Year of death
+15,age_of_death_below_one_month,Below 1 month (in days)
+16,age_of_death_below_eleven_month,1 to 11 months  (in completed months)
+17,age_of_death_above_one_year,1 year and above  (in completed years)
+18,treatment_source,Source of medical attention before death
+19,place_of_death,Place of death
+20,is_death_reg,Is the death registered?
+21,is_death_certificate_received,whether received the Death certificate?
+22,serial_num_of_infant_mother,Serial number of  mother as in Household Schedule
+23,order_of_birth,Order of birth
+24,death_symptoms,Symptoms leading to death
+25,is_death_associated_with_preg,Was the death associated with pregnancy?
+26,death_period,Period when the death occurred?
+27,months_of_pregnancy,how many months pregnant she was at the time of death
+28,factors_contributing_death,Top two factors contributing to death in order of priority 1
+29,factors_contributing_death_2,Top two factors contributing to death in order of priority 2
+30,symptoms_of_death,Symptoms leading to death
+31,tim_bet_onset_complctn_n_death,Time between onset of complications and death
+32,nearest_medical_facility,Distance from place (where the deceased was staying) to the nearest medical facility (in kms)
+33,m_expall_status,m_expall_status
+34,field38,field38
+35,hh_id,hh_id
+36,client_hh_id,client_hh_id
+37,currently_dead_or_out_migrated,currently_dead_or_out_migrated
+38,hh_serial_no,hh_serial_no
+39,sex,Sex 
+40,usual_residance,Whether usual Resident ?
+41,relation_to_head,Relationship to head
+42,member_identity,Identification code of members of the Household
+43,father_serial_no,Serial No. of father
+44,mother_serial_no,Serial No. of mother
+45,date_of_birth,Date of Birth
+46,month_of_birth,Month of Birth
+47,year_of_birth,Year of Birth
+48,age,Age (in completed years) 
+49,religion,Religion
+50,social_group_code,Social Group
+51,marital_status,Marital Status
+52,date_of_marriage,Date of first marriage
+53,month_of_marriage,Month of first marriage
+54,year_of_marriage,Year of first marriage
+55,currently_attending_school,Whether currently attending school
+56,reason_for_not_attending_school,Main reason of not-attending
+57,highest_qualification,Highest educational qualification attained  (for age 7 years and above)
+58,occupation_status,Occupation / Activity Status during last 365 days (for age 5 yrs. and above)
+59,disability_status,Whether having any form of disability as on Date of Survey?
+60,injury_treatment_type,Type of treatment for injury during last 1 year
+61,illness_type,Type of illness
+62,symptoms_pertaining_illness,Symptom(s) Pertaining to illness persisting for more than one month
+63,sought_medical_care,Sought medical care
+64,diagnosed_for,Has Diagnosed for
+65,diagnosis_source,Source of Diagnosis
+66,regular_treatment,Getting Regular Treatment
+67,regular_treatment_source,source of treatment
+68,chew,Chew
+69,smoke,Smoke
+70,alcohol,Consume Alcohol
+71,status,status
+72,hh_expall_status,hh_expall_status
+73,client_hl_id,client_hl_id
+74,serial_no,serial_no
+75,building_no,Building number
+76,house_status,Status of House
+77,house_structure,Type of Structure of the House where the household is living
+78,owner_status,Ownership status of the house where the household is living
+79,drinking_water_source,Main Source of Drinking water
+80,is_water_filter,Does the household treat the water in any way to make it safer to drink
+81,water_filteration,"If code 1 in Col.10,what does the household usually do to make water safer to drink?(code)"
+82,toilet_used,Type of toilet facility mainly used(code)
+83,is_toilet_shared,Whether toilet facility is shared?
+84,household_have_electricity,Does the household have electricity?
+85,lighting_source,Main source of lighting
+86,cooking_fuel,Main source of fuel used for cooking
+87,no_of_dwelling_rooms,Number of dwelling rooms exclusively in possession of the household
+88,kitchen_availability,Availability of Kitchen
+89,is_radio,Radio/Transistor
+90,is_television,Television
+91,is_computer,"Computer/Laptop (Yes-1,No-2)"
+92,is_telephone,Telephone/Mobile phone
+93,is_washing_machine,Washing Machine
+94,is_refrigerator,Refrigerator
+95,is_sewing_machine,Sewing machine
+96,is_bicycle,Bicycle
+97,is_scooter,Motor/Scooter/Moped
+98,is_car,Car/Jeep/Van
+99,is_tractor,Tractor
+100,is_water_pump,Water Pump/Tube Well
+101,cart,Cart
+102,land_possessed,Land Possessed
+103,hl_expall_status,hl_expall_status
+104,fid,fid
+105,isdeadmigrated,isdeadmigrated
+106,residancial_status,Residential Status
+107,iscoveredbyhealthscheme,Whether covered by any health scheme or health insurance?
+108,healthscheme_1,top two health schemes/health insurance in order of priority1
+109,healthscheme_2,top two health schemes/health insurance in order of priority2
+110,housestatus,Status of House as on date of Survey
+111,householdstatus,Status of Household (existing)
+112,isheadchanged,If Head of Household Changed
+113,fidh,fidh
+114,fidx,fidx
+115,as,Asset Score
+116,wt,Weight
+117,x,x
+118,schedule_id,schedule_id
+119,year,Round of AHS Survey
