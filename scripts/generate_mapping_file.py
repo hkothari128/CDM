@@ -1,12 +1,10 @@
 import json
 import sys
-from dicttoxml import dicttoxml as dtx
-import xml.etree.ElementTree as ET
 
 from pprint import pprint
 from pprint import pformat
 import csv
-
+from collections import OrderedDict
 id_dict={}
 map_table=[]
 
@@ -23,6 +21,12 @@ class mapper():
 		self.src_table=src_table
 		self.dest_table=dst_table
 
+	def get_src_col(self):
+		return self.src_column	
+			
+	def get_dest_col(self):
+		return self.dest_column	
+
 	def display(self):
 		print(self.src_column,"\t\t",self.src_table,"\t\t",self.dest_table,"\t\t",self.dest_column)
 
@@ -36,7 +40,14 @@ def save_csv():
 
 	    writer.writeheader()
 	    for mapping in map_table:
+	    	#if(mapping.get_dest_col()=="identified_by"):
+	    	#	csvfile.seek(1)
+	    	
+
+	    	#else:
+	    	#	csvfile.seek(0,2)
 	    	mapping.write_to_csv(writer)
+
 	print("DONE")
 
 def create_map_table(records):
@@ -52,7 +63,11 @@ def create_map_table(records):
 			dst=id_dict[column_mapping["cdmItem"]["@ref"]]
 			
 			obj=mapper(src,dst,src_table,dst_table)
-			map_table.append(obj)
+			global map_table
+			if(dst=="identified_by"):
+				map_table = [obj] + map_table
+			else:
+				map_table.append(obj)
 	
 	print("src_column\t\tsrc_table\t\t\t\tdst_table\t\tdst_column")		
 	for mapping in map_table:
@@ -92,7 +107,7 @@ def get_ids(records):
 	pprint(id_dict)
 
 def main():
-	path="../ETL/test.json"
+	path="../test.json"
 	with open(path,"r") as file:
 		json_str=file.read()
 		records=json.loads(json_str)

@@ -1,2 +1,4 @@
 src_column,src_table,dest_column,dest_table
-state,ahs-mort-uttarakhand-nainital.csv,state,location
+id,ahs-mort-rajasthan-jhunjhunun.csv,identified_by,entity
+state,ahs-mort-rajasthan-jhunjhunun.csv,measurement_value_concept_id,measurements
+district,ahs-mort-rajasthan-jhunjhunun.csv,measurement_value_concept_id,measurements

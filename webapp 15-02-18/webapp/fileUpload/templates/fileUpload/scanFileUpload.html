@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    {% load static %}
+    <meta charset="UTF-8">
+    <title>CDM</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="{% static 'fileUpload/fileUpload.css' %}" type="text/css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" type="application/javascript"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+<div class="container">
+  <form id="contact" class="form-group" action="" method="post" enctype="multipart/form-data">
+
+    <h3 class="text-center">Upload Scan File</h3>
+      {% csrf_token %}
+      {% for field in form %}
+      <div class="form-control">{{ field }}
+      </div><br/>
+      {% endfor %}
+    <fieldset>
+      <button name="Upload" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+    </fieldset>
+
+    <div class="progress">
+    <div class="progress-bar" role="progressbar" aria-valuenow="66" aria-valuemin="0" aria-valuemax="100" style="width:33%">
+    </div>
+  </div>
+  </form>
+</div>
+</body>
+</html>

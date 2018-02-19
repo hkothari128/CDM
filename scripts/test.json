@@ -5,7 +5,7 @@
       "@type":"java.util.ArrayList",
       "@items":[
         {
-          "@id":8,
+          "@id":15,
           "@type":"org.ohdsi.rabbitInAHat.dataModel.Table",
           "db":null,
           "name":"ahs-mort-rajasthan-jhunjhunun.csv",
@@ -15,9 +15,9 @@
             "@type":"java.util.ArrayList",
             "@items":[
               {
-                "@id":10,
+                "@id":19,
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":8},
+                "table":{"@ref":15},
                 "name":"id",
                 "comment":"",
                 "valueCounts":[],
@@ -28,8 +28,9 @@
                 "isStem":false
               },
               {
+                "@id":18,
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":8},
+                "table":{"@ref":15},
                 "name":"m_id",
                 "comment":"",
                 "valueCounts":[],
@@ -40,8 +41,9 @@
                 "isStem":false
               },
               {
+                "@id":17,
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":8},
+                "table":{"@ref":15},
                 "name":"client_m_id",
                 "comment":"",
                 "valueCounts":[],
@@ -53,7 +55,7 @@
               },
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":8},
+                "table":{"@ref":15},
                 "name":"hl_id",
                 "comment":"",
                 "valueCounts":[],
@@ -64,9 +66,8 @@
                 "isStem":false
               },
               {
-                "@id":13,
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":8},
+                "table":{"@ref":15},
                 "name":"state",
                 "comment":"",
                 "valueCounts":[],
@@ -77,9 +78,8 @@
                 "isStem":false
               },
               {
-                "@id":12,
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":8},
+                "table":{"@ref":15},
                 "name":"district",
                 "comment":"",
                 "valueCounts":[],
@@ -91,7 +91,7 @@
               },
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":8},
+                "table":{"@ref":15},
                 "name":"rural",
                 "comment":"",
                 "valueCounts":[],
@@ -103,7 +103,7 @@
               },
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":8},
+                "table":{"@ref":15},
                 "name":"stratum_code",
                 "comment":"",
                 "valueCounts":[],
@@ -115,7 +115,7 @@
               },
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":8},
+                "table":{"@ref":15},
                 "name":"psu_id",
                 "comment":"",
                 "valueCounts":[],
@@ -127,7 +127,7 @@
               },
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":8},
+                "table":{"@ref":15},
                 "name":"m_serial_no",
                 "comment":"",
                 "valueCounts":[],
@@ -139,7 +139,7 @@
               },
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":8},
+                "table":{"@ref":15},
                 "name":"deceased_sex",
                 "comment":"",
                 "valueCounts":[],
@@ -151,7 +151,7 @@
               },
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":8},
+                "table":{"@ref":15},
                 "name":"date_of_death",
                 "comment":"",
                 "valueCounts":[],
@@ -163,7 +163,7 @@
               },
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":8},
+                "table":{"@ref":15},
                 "name":"month_of_death",
                 "comment":"",
                 "valueCounts":[],
@@ -175,7 +175,7 @@
               },
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":8},
+                "table":{"@ref":15},
                 "name":"year_of_death",
                 "comment":"",
                 "valueCounts":[],
@@ -187,7 +187,7 @@
               },
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":8},
+                "table":{"@ref":15},
                 "name":"age_of_death_below_one_month",
                 "comment":"",
                 "valueCounts":[],
@@ -199,7 +199,7 @@
               },
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":8},
+                "table":{"@ref":15},
                 "name":"age_of_death_below_eleven_month",
                 "comment":"",
                 "valueCounts":[],
@@ -211,7 +211,7 @@
               },
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":8},
+                "table":{"@ref":15},
                 "name":"age_of_death_above_one_year",
                 "comment":"",
                 "valueCounts":[],
@@ -223,7 +223,7 @@
               },
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":8},
+                "table":{"@ref":15},
                 "name":"treatment_source",
                 "comment":"",
                 "valueCounts":[],
@@ -235,7 +235,7 @@
               },
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":8},
+                "table":{"@ref":15},
                 "name":"place_of_death",
                 "comment":"",
                 "valueCounts":[],
@@ -247,7 +247,7 @@
               },
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":8},
+                "table":{"@ref":15},
                 "name":"is_death_reg",
                 "comment":"",
                 "valueCounts":[],
@@ -259,7 +259,7 @@
               },
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":8},
+                "table":{"@ref":15},
                 "name":"is_death_certificate_received",
                 "comment":"",
                 "valueCounts":[],
@@ -271,7 +271,7 @@
               },
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":8},
+                "table":{"@ref":15},
                 "name":"serial_num_of_infant_mother",
                 "comment":"",
                 "valueCounts":[],
@@ -283,7 +283,7 @@
               },
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":8},
+                "table":{"@ref":15},
                 "name":"order_of_birth",
                 "comment":"",
                 "valueCounts":[],
@@ -295,7 +295,7 @@
               },
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":8},
+                "table":{"@ref":15},
                 "name":"death_symptoms",
                 "comment":"",
                 "valueCounts":[],
@@ -307,7 +307,7 @@
               },
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":8},
+                "table":{"@ref":15},
                 "name":"is_death_associated_with_preg",
                 "comment":"",
                 "valueCounts":[],
@@ -319,7 +319,7 @@
               },
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":8},
+                "table":{"@ref":15},
                 "name":"death_period",
                 "comment":"",
                 "valueCounts":[],
@@ -331,7 +331,7 @@
               },
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":8},
+                "table":{"@ref":15},
                 "name":"months_of_pregnancy",
                 "comment":"",
                 "valueCounts":[],
@@ -343,7 +343,7 @@
               },
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":8},
+                "table":{"@ref":15},
                 "name":"factors_contributing_death",
                 "comment":"",
                 "valueCounts":[],
@@ -355,7 +355,7 @@
               },
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":8},
+                "table":{"@ref":15},
                 "name":"factors_contributing_death_2",
                 "comment":"",
                 "valueCounts":[],
@@ -367,7 +367,7 @@
               },
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":8},
+                "table":{"@ref":15},
                 "name":"symptoms_of_death",
                 "comment":"",
                 "valueCounts":[],
@@ -379,7 +379,7 @@
               },
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":8},
+                "table":{"@ref":15},
                 "name":"tim_bet_onset_complctn_n_death",
                 "comment":"",
                 "valueCounts":[],
@@ -391,7 +391,7 @@
               },
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":8},
+                "table":{"@ref":15},
                 "name":"nearest_medical_facility",
                 "comment":"",
                 "valueCounts":[],
@@ -403,7 +403,7 @@
               },
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":8},
+                "table":{"@ref":15},
                 "name":"m_expall_status",
                 "comment":"",
                 "valueCounts":[],
@@ -415,7 +415,7 @@
               },
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":8},
+                "table":{"@ref":15},
                 "name":"field38",
                 "comment":"",
                 "valueCounts":[],
@@ -427,7 +427,7 @@
               },
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":8},
+                "table":{"@ref":15},
                 "name":"hh_id",
                 "comment":"",
                 "valueCounts":[],
@@ -439,7 +439,7 @@
               },
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":8},
+                "table":{"@ref":15},
                 "name":"client_hh_id",
                 "comment":"",
                 "valueCounts":[],
@@ -451,7 +451,7 @@
               },
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":8},
+                "table":{"@ref":15},
                 "name":"currently_dead_or_out_migrated",
                 "comment":"",
                 "valueCounts":[],
@@ -463,7 +463,7 @@
               },
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":8},
+                "table":{"@ref":15},
                 "name":"hh_serial_no",
                 "comment":"",
                 "valueCounts":[],
@@ -475,7 +475,7 @@
               },
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":8},
+                "table":{"@ref":15},
                 "name":"sex",
                 "comment":"",
                 "valueCounts":[],
@@ -487,7 +487,7 @@
               },
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":8},
+                "table":{"@ref":15},
                 "name":"usual_residance",
                 "comment":"",
                 "valueCounts":[],
@@ -499,7 +499,7 @@
               },
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":8},
+                "table":{"@ref":15},
                 "name":"relation_to_head",
                 "comment":"",
                 "valueCounts":[],
@@ -511,7 +511,7 @@
               },
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":8},
+                "table":{"@ref":15},
                 "name":"member_identity",
                 "comment":"",
                 "valueCounts":[],
@@ -523,7 +523,7 @@
               },
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":8},
+                "table":{"@ref":15},
                 "name":"father_serial_no",
                 "comment":"",
                 "valueCounts":[],
@@ -535,7 +535,7 @@
               },
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":8},
+                "table":{"@ref":15},
                 "name":"mother_serial_no",
                 "comment":"",
                 "valueCounts":[],
@@ -547,7 +547,7 @@
               },
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":8},
+                "table":{"@ref":15},
                 "name":"date_of_birth",
                 "comment":"",
                 "valueCounts":[],
@@ -559,7 +559,7 @@
               },
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":8},
+                "table":{"@ref":15},
                 "name":"month_of_birth",
                 "comment":"",
                 "valueCounts":[],
@@ -571,7 +571,7 @@
               },
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":8},
+                "table":{"@ref":15},
                 "name":"year_of_birth",
                 "comment":"",
                 "valueCounts":[],
@@ -583,7 +583,7 @@
               },
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":8},
+                "table":{"@ref":15},
                 "name":"age",
                 "comment":"",
                 "valueCounts":[],
@@ -595,7 +595,7 @@
               },
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":8},
+                "table":{"@ref":15},
                 "name":"religion",
                 "comment":"",
                 "valueCounts":[],
@@ -607,7 +607,7 @@
               },
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":8},
+                "table":{"@ref":15},
                 "name":"social_group_code",
                 "comment":"",
                 "valueCounts":[],
@@ -619,7 +619,7 @@
               },
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":8},
+                "table":{"@ref":15},
                 "name":"marital_status",
                 "comment":"",
                 "valueCounts":[],
@@ -631,7 +631,7 @@
               },
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":8},
+                "table":{"@ref":15},
                 "name":"date_of_marriage",
                 "comment":"",
                 "valueCounts":[],
@@ -643,7 +643,7 @@
               },
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":8},
+                "table":{"@ref":15},
                 "name":"month_of_marriage",
                 "comment":"",
                 "valueCounts":[],
@@ -655,7 +655,7 @@
               },
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":8},
+                "table":{"@ref":15},
                 "name":"year_of_marriage",
                 "comment":"",
                 "valueCounts":[],
@@ -667,7 +667,7 @@
               },
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":8},
+                "table":{"@ref":15},
                 "name":"currently_attending_school",
                 "comment":"",
                 "valueCounts":[],
@@ -679,7 +679,7 @@
               },
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":8},
+                "table":{"@ref":15},
                 "name":"reason_for_not_attending_school",
                 "comment":"",
                 "valueCounts":[],
@@ -691,7 +691,7 @@
               },
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":8},
+                "table":{"@ref":15},
                 "name":"highest_qualification",
                 "comment":"",
                 "valueCounts":[],
@@ -703,7 +703,7 @@
               },
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":8},
+                "table":{"@ref":15},
                 "name":"occupation_status",
                 "comment":"",
                 "valueCounts":[],
@@ -715,7 +715,7 @@
               },
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":8},
+                "table":{"@ref":15},
                 "name":"disability_status",
                 "comment":"",
                 "valueCounts":[],
@@ -727,7 +727,7 @@
               },
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":8},
+                "table":{"@ref":15},
                 "name":"injury_treatment_type",
                 "comment":"",
                 "valueCounts":[],
@@ -739,7 +739,7 @@
               },
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":8},
+                "table":{"@ref":15},
                 "name":"illness_type",
                 "comment":"",
                 "valueCounts":[],
@@ -751,7 +751,7 @@
               },
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":8},
+                "table":{"@ref":15},
                 "name":"symptoms_pertaining_illness",
                 "comment":"",
                 "valueCounts":[],
@@ -763,7 +763,7 @@
               },
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":8},
+                "table":{"@ref":15},
                 "name":"sought_medical_care",
                 "comment":"",
                 "valueCounts":[],
@@ -775,7 +775,7 @@
               },
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":8},
+                "table":{"@ref":15},
                 "name":"diagnosed_for",
                 "comment":"",
                 "valueCounts":[],
@@ -787,7 +787,7 @@
               },
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":8},
+                "table":{"@ref":15},
                 "name":"diagnosis_source",
                 "comment":"",
                 "valueCounts":[],
@@ -799,7 +799,7 @@
               },
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":8},
+                "table":{"@ref":15},
                 "name":"regular_treatment",
                 "comment":"",
                 "valueCounts":[],
@@ -811,7 +811,7 @@
               },
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":8},
+                "table":{"@ref":15},
                 "name":"regular_treatment_source",
                 "comment":"",
                 "valueCounts":[],
@@ -823,7 +823,7 @@
               },
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":8},
+                "table":{"@ref":15},
                 "name":"chew",
                 "comment":"",
                 "valueCounts":[],
@@ -835,7 +835,7 @@
               },
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":8},
+                "table":{"@ref":15},
                 "name":"smoke",
                 "comment":"",
                 "valueCounts":[],
@@ -847,7 +847,7 @@
               },
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":8},
+                "table":{"@ref":15},
                 "name":"alcohol",
                 "comment":"",
                 "valueCounts":[],
@@ -859,7 +859,7 @@
               },
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":8},
+                "table":{"@ref":15},
                 "name":"status",
                 "comment":"",
                 "valueCounts":[],
@@ -871,7 +871,7 @@
               },
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":8},
+                "table":{"@ref":15},
                 "name":"hh_expall_status",
                 "comment":"",
                 "valueCounts":[],
@@ -883,7 +883,7 @@
               },
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":8},
+                "table":{"@ref":15},
                 "name":"client_hl_id",
                 "comment":"",
                 "valueCounts":[],
@@ -895,7 +895,7 @@
               },
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":8},
+                "table":{"@ref":15},
                 "name":"serial_no",
                 "comment":"",
                 "valueCounts":[],
@@ -907,7 +907,7 @@
               },
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":8},
+                "table":{"@ref":15},
                 "name":"building_no",
                 "comment":"",
                 "valueCounts":[],
@@ -919,7 +919,7 @@
               },
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":8},
+                "table":{"@ref":15},
                 "name":"house_status",
                 "comment":"",
                 "valueCounts":[],
@@ -931,7 +931,7 @@
               },
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":8},
+                "table":{"@ref":15},
                 "name":"house_structure",
                 "comment":"",
                 "valueCounts":[],
@@ -943,7 +943,7 @@
               },
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":8},
+                "table":{"@ref":15},
                 "name":"owner_status",
                 "comment":"",
                 "valueCounts":[],
@@ -955,7 +955,7 @@
               },
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":8},
+                "table":{"@ref":15},
                 "name":"drinking_water_source",
                 "comment":"",
                 "valueCounts":[],
@@ -967,7 +967,7 @@
               },
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":8},
+                "table":{"@ref":15},
                 "name":"is_water_filter",
                 "comment":"",
                 "valueCounts":[],
@@ -979,7 +979,7 @@
               },
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":8},
+                "table":{"@ref":15},
                 "name":"water_filteration",
                 "comment":"",
                 "valueCounts":[],
@@ -991,7 +991,7 @@
               },
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":8},
+                "table":{"@ref":15},
                 "name":"toilet_used",
                 "comment":"",
                 "valueCounts":[],
@@ -1003,7 +1003,7 @@
               },
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":8},
+                "table":{"@ref":15},
                 "name":"is_toilet_shared",
                 "comment":"",
                 "valueCounts":[],
@@ -1015,7 +1015,7 @@
               },
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":8},
+                "table":{"@ref":15},
                 "name":"household_have_electricity",
                 "comment":"",
                 "valueCounts":[],
@@ -1027,7 +1027,7 @@
               },
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":8},
+                "table":{"@ref":15},
                 "name":"lighting_source",
                 "comment":"",
                 "valueCounts":[],
@@ -1039,7 +1039,7 @@
               },
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":8},
+                "table":{"@ref":15},
                 "name":"cooking_fuel",
                 "comment":"",
                 "valueCounts":[],
@@ -1051,7 +1051,7 @@
               },
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":8},
+                "table":{"@ref":15},
                 "name":"no_of_dwelling_rooms",
                 "comment":"",
                 "valueCounts":[],
@@ -1063,7 +1063,7 @@
               },
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":8},
+                "table":{"@ref":15},
                 "name":"kitchen_availability",
                 "comment":"",
                 "valueCounts":[],
@@ -1075,7 +1075,7 @@
               },
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":8},
+                "table":{"@ref":15},
                 "name":"is_radio",
                 "comment":"",
                 "valueCounts":[],
@@ -1087,7 +1087,7 @@
               },
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":8},
+                "table":{"@ref":15},
                 "name":"is_television",
                 "comment":"",
                 "valueCounts":[],
@@ -1099,7 +1099,7 @@
               },
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":8},
+                "table":{"@ref":15},
                 "name":"is_computer",
                 "comment":"",
                 "valueCounts":[],
@@ -1111,7 +1111,7 @@
               },
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":8},
+                "table":{"@ref":15},
                 "name":"is_telephone",
                 "comment":"",
                 "valueCounts":[],
@@ -1123,7 +1123,7 @@
               },
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":8},
+                "table":{"@ref":15},
                 "name":"is_washing_machine",
                 "comment":"",
                 "valueCounts":[],
@@ -1135,7 +1135,7 @@
               },
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":8},
+                "table":{"@ref":15},
                 "name":"is_refrigerator",
                 "comment":"",
                 "valueCounts":[],
@@ -1147,7 +1147,7 @@
               },
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":8},
+                "table":{"@ref":15},
                 "name":"is_sewing_machine",
                 "comment":"",
                 "valueCounts":[],
@@ -1159,7 +1159,7 @@
               },
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":8},
+                "table":{"@ref":15},
                 "name":"is_bicycle",
                 "comment":"",
                 "valueCounts":[],
@@ -1171,7 +1171,7 @@
               },
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":8},
+                "table":{"@ref":15},
                 "name":"is_scooter",
                 "comment":"",
                 "valueCounts":[],
@@ -1183,7 +1183,7 @@
               },
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":8},
+                "table":{"@ref":15},
                 "name":"is_car",
                 "comment":"",
                 "valueCounts":[],
@@ -1195,7 +1195,7 @@
               },
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":8},
+                "table":{"@ref":15},
                 "name":"is_tractor",
                 "comment":"",
                 "valueCounts":[],
@@ -1207,7 +1207,7 @@
               },
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":8},
+                "table":{"@ref":15},
                 "name":"is_water_pump",
                 "comment":"",
                 "valueCounts":[],
@@ -1219,7 +1219,7 @@
               },
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":8},
+                "table":{"@ref":15},
                 "name":"cart",
                 "comment":"",
                 "valueCounts":[],
@@ -1231,7 +1231,7 @@
               },
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":8},
+                "table":{"@ref":15},
                 "name":"land_possessed",
                 "comment":"",
                 "valueCounts":[],
@@ -1243,7 +1243,7 @@
               },
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":8},
+                "table":{"@ref":15},
                 "name":"hl_expall_status",
                 "comment":"",
                 "valueCounts":[],
@@ -1255,7 +1255,7 @@
               },
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":8},
+                "table":{"@ref":15},
                 "name":"fid",
                 "comment":"",
                 "valueCounts":[],
@@ -1267,7 +1267,7 @@
               },
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":8},
+                "table":{"@ref":15},
                 "name":"isdeadmigrated",
                 "comment":"",
                 "valueCounts":[],
@@ -1279,7 +1279,7 @@
               },
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":8},
+                "table":{"@ref":15},
                 "name":"residancial_status",
                 "comment":"",
                 "valueCounts":[],
@@ -1291,7 +1291,7 @@
               },
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":8},
+                "table":{"@ref":15},
                 "name":"iscoveredbyhealthscheme",
                 "comment":"",
                 "valueCounts":[],
@@ -1303,7 +1303,7 @@
               },
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":8},
+                "table":{"@ref":15},
                 "name":"healthscheme_1",
                 "comment":"",
                 "valueCounts":[],
@@ -1315,7 +1315,7 @@
               },
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":8},
+                "table":{"@ref":15},
                 "name":"healthscheme_2",
                 "comment":"",
                 "valueCounts":[],
@@ -1327,7 +1327,7 @@
               },
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":8},
+                "table":{"@ref":15},
                 "name":"housestatus",
                 "comment":"",
                 "valueCounts":[],
@@ -1339,7 +1339,7 @@
               },
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":8},
+                "table":{"@ref":15},
                 "name":"householdstatus",
                 "comment":"",
                 "valueCounts":[],
@@ -1351,7 +1351,7 @@
               },
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":8},
+                "table":{"@ref":15},
                 "name":"isheadchanged",
                 "comment":"",
                 "valueCounts":[],
@@ -1363,7 +1363,7 @@
               },
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":8},
+                "table":{"@ref":15},
                 "name":"fidh",
                 "comment":"",
                 "valueCounts":[],
@@ -1375,7 +1375,7 @@
               },
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":8},
+                "table":{"@ref":15},
                 "name":"fidx",
                 "comment":"",
                 "valueCounts":[],
@@ -1387,7 +1387,7 @@
               },
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":8},
+                "table":{"@ref":15},
                 "name":"as",
                 "comment":"",
                 "valueCounts":[],
@@ -1399,7 +1399,7 @@
               },
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":8},
+                "table":{"@ref":15},
                 "name":"wt",
                 "comment":"",
                 "valueCounts":[],
@@ -1411,7 +1411,7 @@
               },
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":8},
+                "table":{"@ref":15},
                 "name":"x",
                 "comment":"",
                 "valueCounts":[],
@@ -1423,7 +1423,7 @@
               },
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":8},
+                "table":{"@ref":15},
                 "name":"schedule_id",
                 "comment":"",
                 "valueCounts":[],
@@ -1435,7 +1435,7 @@
               },
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":8},
+                "table":{"@ref":15},
                 "name":"year",
                 "comment":"",
                 "valueCounts":[],
@@ -1459,7 +1459,70 @@
       "@type":"java.util.ArrayList",
       "@items":[
         {
-          "@id":7,
+          "@id":1,
+          "@type":"org.ohdsi.rabbitInAHat.dataModel.Table",
+          "db":{"@ref":3},
+          "name":"concept_ancestor",
+          "rowCount":0,
+          "comment":"",
+          "fields":{
+            "@type":"java.util.ArrayList",
+            "@items":[
+              {
+                "@id":16,
+                "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
+                "table":{"@ref":1},
+                "name":"ancestor_concept_id",
+                "comment":"",
+                "valueCounts":null,
+                "isNullable":false,
+                "type":"INTEGER",
+                "description":"",
+                "maxLength":0,
+                "isStem":false
+              },
+              {
+                "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
+                "table":{"@ref":1},
+                "name":"descendant_concept_id",
+                "comment":"",
+                "valueCounts":null,
+                "isNullable":false,
+                "type":"INTEGER",
+                "description":"",
+                "maxLength":0,
+                "isStem":false
+              },
+              {
+                "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
+                "table":{"@ref":1},
+                "name":"min_levels_of_separation",
+                "comment":"",
+                "valueCounts":null,
+                "isNullable":false,
+                "type":"INTEGER",
+                "description":"",
+                "maxLength":0,
+                "isStem":false
+              },
+              {
+                "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
+                "table":{"@ref":1},
+                "name":"max_levels_of_separation",
+                "comment":"",
+                "valueCounts":null,
+                "isNullable":false,
+                "type":"INTEGER",
+                "description":"",
+                "maxLength":0,
+                "isStem":false
+              }
+            ]
+          },
+          "isStem":false
+        },
+        {
+          "@id":14,
           "@type":"org.ohdsi.rabbitInAHat.dataModel.Table",
           "db":{"@ref":3},
           "name":"concept",
@@ -1470,7 +1533,19 @@
             "@items":[
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":7},
+                "table":{"@ref":14},
+                "name":"concept_id",
+                "comment":"",
+                "valueCounts":null,
+                "isNullable":false,
+                "type":"INTEGER",
+                "description":"",
+                "maxLength":0,
+                "isStem":false
+              },
+              {
+                "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
+                "table":{"@ref":14},
                 "name":"concept_name",
                 "comment":"",
                 "valueCounts":null,
@@ -1482,7 +1557,7 @@
               },
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":7},
+                "table":{"@ref":14},
                 "name":"domain_id",
                 "comment":"",
                 "valueCounts":null,
@@ -1494,12 +1569,890 @@
               },
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":7},
+                "table":{"@ref":14},
+                "name":"vocabulary_id",
+                "comment":"",
+                "valueCounts":null,
+                "isNullable":false,
+                "type":"CHARACTER VARYING",
+                "description":"",
+                "maxLength":0,
+                "isStem":false
+              },
+              {
+                "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
+                "table":{"@ref":14},
+                "name":"concept_class_id",
+                "comment":"",
+                "valueCounts":null,
+                "isNullable":false,
+                "type":"CHARACTER VARYING",
+                "description":"",
+                "maxLength":0,
+                "isStem":false
+              },
+              {
+                "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
+                "table":{"@ref":14},
+                "name":"standard_concept",
+                "comment":"",
+                "valueCounts":null,
+                "isNullable":true,
+                "type":"CHARACTER VARYING",
+                "description":"",
+                "maxLength":0,
+                "isStem":false
+              },
+              {
+                "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
+                "table":{"@ref":14},
+                "name":"concept_code",
+                "comment":"",
+                "valueCounts":null,
+                "isNullable":false,
+                "type":"CHARACTER VARYING",
+                "description":"",
+                "maxLength":0,
+                "isStem":false
+              },
+              {
+                "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
+                "table":{"@ref":14},
+                "name":"valid_start_date",
+                "comment":"",
+                "valueCounts":null,
+                "isNullable":false,
+                "type":"DATE",
+                "description":"",
+                "maxLength":0,
+                "isStem":false
+              },
+              {
+                "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
+                "table":{"@ref":14},
+                "name":"valid_end_date",
+                "comment":"",
+                "valueCounts":null,
+                "isNullable":false,
+                "type":"DATE",
+                "description":"",
+                "maxLength":0,
+                "isStem":false
+              },
+              {
+                "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
+                "table":{"@ref":14},
+                "name":"invalid_reason",
+                "comment":"",
+                "valueCounts":null,
+                "isNullable":true,
+                "type":"CHARACTER VARYING",
+                "description":"",
+                "maxLength":0,
+                "isStem":false
+              }
+            ]
+          },
+          "isStem":false
+        },
+        {
+          "@id":13,
+          "@type":"org.ohdsi.rabbitInAHat.dataModel.Table",
+          "db":{"@ref":3},
+          "name":"concept_class",
+          "rowCount":0,
+          "comment":"",
+          "fields":{
+            "@type":"java.util.ArrayList",
+            "@items":[
+              {
+                "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
+                "table":{"@ref":13},
+                "name":"concept_class_id",
+                "comment":"",
+                "valueCounts":null,
+                "isNullable":false,
+                "type":"CHARACTER VARYING",
+                "description":"",
+                "maxLength":0,
+                "isStem":false
+              },
+              {
+                "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
+                "table":{"@ref":13},
+                "name":"concept_class_name",
+                "comment":"",
+                "valueCounts":null,
+                "isNullable":false,
+                "type":"CHARACTER VARYING",
+                "description":"",
+                "maxLength":0,
+                "isStem":false
+              },
+              {
+                "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
+                "table":{"@ref":13},
+                "name":"concept_class_concept_id",
+                "comment":"",
+                "valueCounts":null,
+                "isNullable":false,
+                "type":"INTEGER",
+                "description":"",
+                "maxLength":0,
+                "isStem":false
+              }
+            ]
+          },
+          "isStem":false
+        },
+        {
+          "@id":12,
+          "@type":"org.ohdsi.rabbitInAHat.dataModel.Table",
+          "db":{"@ref":3},
+          "name":"concept_relationship",
+          "rowCount":0,
+          "comment":"",
+          "fields":{
+            "@type":"java.util.ArrayList",
+            "@items":[
+              {
+                "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
+                "table":{"@ref":12},
+                "name":"concept_id_1",
+                "comment":"",
+                "valueCounts":null,
+                "isNullable":false,
+                "type":"INTEGER",
+                "description":"",
+                "maxLength":0,
+                "isStem":false
+              },
+              {
+                "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
+                "table":{"@ref":12},
+                "name":"concept_id_2",
+                "comment":"",
+                "valueCounts":null,
+                "isNullable":false,
+                "type":"INTEGER",
+                "description":"",
+                "maxLength":0,
+                "isStem":false
+              },
+              {
+                "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
+                "table":{"@ref":12},
+                "name":"relationship_id",
+                "comment":"",
+                "valueCounts":null,
+                "isNullable":false,
+                "type":"CHARACTER VARYING",
+                "description":"",
+                "maxLength":0,
+                "isStem":false
+              },
+              {
+                "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
+                "table":{"@ref":12},
+                "name":"valid_start_date",
+                "comment":"",
+                "valueCounts":null,
+                "isNullable":false,
+                "type":"DATE",
+                "description":"",
+                "maxLength":0,
+                "isStem":false
+              },
+              {
+                "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
+                "table":{"@ref":12},
+                "name":"valid_end_date",
+                "comment":"",
+                "valueCounts":null,
+                "isNullable":false,
+                "type":"DATE",
+                "description":"",
+                "maxLength":0,
+                "isStem":false
+              },
+              {
+                "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
+                "table":{"@ref":12},
+                "name":"invalid_reason",
+                "comment":"",
+                "valueCounts":null,
+                "isNullable":true,
+                "type":"CHARACTER VARYING",
+                "description":"",
+                "maxLength":0,
+                "isStem":false
+              }
+            ]
+          },
+          "isStem":false
+        },
+        {
+          "@id":11,
+          "@type":"org.ohdsi.rabbitInAHat.dataModel.Table",
+          "db":{"@ref":3},
+          "name":"concept_synonym",
+          "rowCount":0,
+          "comment":"",
+          "fields":{
+            "@type":"java.util.ArrayList",
+            "@items":[
+              {
+                "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
+                "table":{"@ref":11},
                 "name":"concept_id",
                 "comment":"",
                 "valueCounts":null,
                 "isNullable":false,
-                "type":"BIGINT",
+                "type":"INTEGER",
+                "description":"",
+                "maxLength":0,
+                "isStem":false
+              },
+              {
+                "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
+                "table":{"@ref":11},
+                "name":"concept_synonym_name",
+                "comment":"",
+                "valueCounts":null,
+                "isNullable":false,
+                "type":"TEXT",
+                "description":"",
+                "maxLength":0,
+                "isStem":false
+              },
+              {
+                "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
+                "table":{"@ref":11},
+                "name":"language_concept_id",
+                "comment":"",
+                "valueCounts":null,
+                "isNullable":false,
+                "type":"INTEGER",
+                "description":"",
+                "maxLength":0,
+                "isStem":false
+              }
+            ]
+          },
+          "isStem":false
+        },
+        {
+          "@id":10,
+          "@type":"org.ohdsi.rabbitInAHat.dataModel.Table",
+          "db":{"@ref":3},
+          "name":"domain",
+          "rowCount":0,
+          "comment":"",
+          "fields":{
+            "@type":"java.util.ArrayList",
+            "@items":[
+              {
+                "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
+                "table":{"@ref":10},
+                "name":"domain_id",
+                "comment":"",
+                "valueCounts":null,
+                "isNullable":false,
+                "type":"CHARACTER VARYING",
+                "description":"",
+                "maxLength":0,
+                "isStem":false
+              },
+              {
+                "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
+                "table":{"@ref":10},
+                "name":"domain_name",
+                "comment":"",
+                "valueCounts":null,
+                "isNullable":false,
+                "type":"CHARACTER VARYING",
+                "description":"",
+                "maxLength":0,
+                "isStem":false
+              },
+              {
+                "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
+                "table":{"@ref":10},
+                "name":"domain_concept_id",
+                "comment":"",
+                "valueCounts":null,
+                "isNullable":false,
+                "type":"INTEGER",
+                "description":"",
+                "maxLength":0,
+                "isStem":false
+              }
+            ]
+          },
+          "isStem":false
+        },
+        {
+          "@id":9,
+          "@type":"org.ohdsi.rabbitInAHat.dataModel.Table",
+          "db":{"@ref":3},
+          "name":"location",
+          "rowCount":0,
+          "comment":"",
+          "fields":{
+            "@type":"java.util.ArrayList",
+            "@items":[
+              {
+                "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
+                "table":{"@ref":9},
+                "name":"location_id",
+                "comment":"",
+                "valueCounts":null,
+                "isNullable":false,
+                "type":"INTEGER",
+                "description":"",
+                "maxLength":0,
+                "isStem":false
+              },
+              {
+                "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
+                "table":{"@ref":9},
+                "name":"address_1",
+                "comment":"",
+                "valueCounts":null,
+                "isNullable":true,
+                "type":"CHARACTER VARYING",
+                "description":"",
+                "maxLength":0,
+                "isStem":false
+              },
+              {
+                "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
+                "table":{"@ref":9},
+                "name":"address_2",
+                "comment":"",
+                "valueCounts":null,
+                "isNullable":true,
+                "type":"CHARACTER VARYING",
+                "description":"",
+                "maxLength":0,
+                "isStem":false
+              },
+              {
+                "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
+                "table":{"@ref":9},
+                "name":"city",
+                "comment":"",
+                "valueCounts":null,
+                "isNullable":true,
+                "type":"CHARACTER VARYING",
+                "description":"",
+                "maxLength":0,
+                "isStem":false
+              },
+              {
+                "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
+                "table":{"@ref":9},
+                "name":"state",
+                "comment":"",
+                "valueCounts":null,
+                "isNullable":true,
+                "type":"CHARACTER VARYING",
+                "description":"",
+                "maxLength":0,
+                "isStem":false
+              },
+              {
+                "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
+                "table":{"@ref":9},
+                "name":"zip",
+                "comment":"",
+                "valueCounts":null,
+                "isNullable":true,
+                "type":"CHARACTER VARYING",
+                "description":"",
+                "maxLength":0,
+                "isStem":false
+              },
+              {
+                "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
+                "table":{"@ref":9},
+                "name":"county",
+                "comment":"",
+                "valueCounts":null,
+                "isNullable":true,
+                "type":"CHARACTER VARYING",
+                "description":"",
+                "maxLength":0,
+                "isStem":false
+              },
+              {
+                "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
+                "table":{"@ref":9},
+                "name":"location_source_value",
+                "comment":"",
+                "valueCounts":null,
+                "isNullable":true,
+                "type":"CHARACTER VARYING",
+                "description":"",
+                "maxLength":0,
+                "isStem":false
+              }
+            ]
+          },
+          "isStem":false
+        },
+        {
+          "@id":8,
+          "@type":"org.ohdsi.rabbitInAHat.dataModel.Table",
+          "db":{"@ref":3},
+          "name":"measurement",
+          "rowCount":0,
+          "comment":"",
+          "fields":{
+            "@type":"java.util.ArrayList",
+            "@items":[
+              {
+                "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
+                "table":{"@ref":8},
+                "name":"measurement_id",
+                "comment":"",
+                "valueCounts":null,
+                "isNullable":false,
+                "type":"INTEGER",
+                "description":"",
+                "maxLength":0,
+                "isStem":false
+              },
+              {
+                "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
+                "table":{"@ref":8},
+                "name":"person_id",
+                "comment":"",
+                "valueCounts":null,
+                "isNullable":false,
+                "type":"INTEGER",
+                "description":"",
+                "maxLength":0,
+                "isStem":false
+              },
+              {
+                "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
+                "table":{"@ref":8},
+                "name":"measurement_concept_id",
+                "comment":"",
+                "valueCounts":null,
+                "isNullable":false,
+                "type":"INTEGER",
+                "description":"",
+                "maxLength":0,
+                "isStem":false
+              },
+              {
+                "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
+                "table":{"@ref":8},
+                "name":"measurement_date",
+                "comment":"",
+                "valueCounts":null,
+                "isNullable":false,
+                "type":"DATE",
+                "description":"",
+                "maxLength":0,
+                "isStem":false
+              },
+              {
+                "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
+                "table":{"@ref":8},
+                "name":"measurement_time",
+                "comment":"",
+                "valueCounts":null,
+                "isNullable":true,
+                "type":"CHARACTER VARYING",
+                "description":"",
+                "maxLength":0,
+                "isStem":false
+              },
+              {
+                "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
+                "table":{"@ref":8},
+                "name":"measurement_type_concept_id",
+                "comment":"",
+                "valueCounts":null,
+                "isNullable":false,
+                "type":"INTEGER",
+                "description":"",
+                "maxLength":0,
+                "isStem":false
+              },
+              {
+                "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
+                "table":{"@ref":8},
+                "name":"operator_concept_id",
+                "comment":"",
+                "valueCounts":null,
+                "isNullable":true,
+                "type":"INTEGER",
+                "description":"",
+                "maxLength":0,
+                "isStem":false
+              },
+              {
+                "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
+                "table":{"@ref":8},
+                "name":"value_as_number",
+                "comment":"",
+                "valueCounts":null,
+                "isNullable":true,
+                "type":"NUMERIC",
+                "description":"",
+                "maxLength":0,
+                "isStem":false
+              },
+              {
+                "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
+                "table":{"@ref":8},
+                "name":"value_as_concept_id",
+                "comment":"",
+                "valueCounts":null,
+                "isNullable":true,
+                "type":"INTEGER",
+                "description":"",
+                "maxLength":0,
+                "isStem":false
+              },
+              {
+                "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
+                "table":{"@ref":8},
+                "name":"unit_concept_id",
+                "comment":"",
+                "valueCounts":null,
+                "isNullable":true,
+                "type":"INTEGER",
+                "description":"",
+                "maxLength":0,
+                "isStem":false
+              },
+              {
+                "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
+                "table":{"@ref":8},
+                "name":"range_low",
+                "comment":"",
+                "valueCounts":null,
+                "isNullable":true,
+                "type":"NUMERIC",
+                "description":"",
+                "maxLength":0,
+                "isStem":false
+              },
+              {
+                "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
+                "table":{"@ref":8},
+                "name":"range_high",
+                "comment":"",
+                "valueCounts":null,
+                "isNullable":true,
+                "type":"NUMERIC",
+                "description":"",
+                "maxLength":0,
+                "isStem":false
+              },
+              {
+                "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
+                "table":{"@ref":8},
+                "name":"provider_id",
+                "comment":"",
+                "valueCounts":null,
+                "isNullable":true,
+                "type":"INTEGER",
+                "description":"",
+                "maxLength":0,
+                "isStem":false
+              },
+              {
+                "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
+                "table":{"@ref":8},
+                "name":"visit_occurrence_id",
+                "comment":"",
+                "valueCounts":null,
+                "isNullable":true,
+                "type":"INTEGER",
+                "description":"",
+                "maxLength":0,
+                "isStem":false
+              },
+              {
+                "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
+                "table":{"@ref":8},
+                "name":"measurement_source_value",
+                "comment":"",
+                "valueCounts":null,
+                "isNullable":true,
+                "type":"CHARACTER VARYING",
+                "description":"",
+                "maxLength":0,
+                "isStem":false
+              },
+              {
+                "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
+                "table":{"@ref":8},
+                "name":"measurement_source_concept_id",
+                "comment":"",
+                "valueCounts":null,
+                "isNullable":true,
+                "type":"INTEGER",
+                "description":"",
+                "maxLength":0,
+                "isStem":false
+              },
+              {
+                "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
+                "table":{"@ref":8},
+                "name":"unit_source_value",
+                "comment":"",
+                "valueCounts":null,
+                "isNullable":true,
+                "type":"CHARACTER VARYING",
+                "description":"",
+                "maxLength":0,
+                "isStem":false
+              },
+              {
+                "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
+                "table":{"@ref":8},
+                "name":"value_source_value",
+                "comment":"",
+                "valueCounts":null,
+                "isNullable":true,
+                "type":"CHARACTER VARYING",
+                "description":"",
+                "maxLength":0,
+                "isStem":false
+              }
+            ]
+          },
+          "isStem":false
+        },
+        {
+          "@id":7,
+          "@type":"org.ohdsi.rabbitInAHat.dataModel.Table",
+          "db":{"@ref":3},
+          "name":"person",
+          "rowCount":0,
+          "comment":"",
+          "fields":{
+            "@type":"java.util.ArrayList",
+            "@items":[
+              {
+                "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
+                "table":{"@ref":7},
+                "name":"person_id",
+                "comment":"",
+                "valueCounts":null,
+                "isNullable":false,
+                "type":"INTEGER",
+                "description":"",
+                "maxLength":0,
+                "isStem":false
+              },
+              {
+                "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
+                "table":{"@ref":7},
+                "name":"gender_concept_id",
+                "comment":"",
+                "valueCounts":null,
+                "isNullable":false,
+                "type":"INTEGER",
+                "description":"",
+                "maxLength":0,
+                "isStem":false
+              },
+              {
+                "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
+                "table":{"@ref":7},
+                "name":"year_of_birth",
+                "comment":"",
+                "valueCounts":null,
+                "isNullable":false,
+                "type":"INTEGER",
+                "description":"",
+                "maxLength":0,
+                "isStem":false
+              },
+              {
+                "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
+                "table":{"@ref":7},
+                "name":"month_of_birth",
+                "comment":"",
+                "valueCounts":null,
+                "isNullable":true,
+                "type":"INTEGER",
+                "description":"",
+                "maxLength":0,
+                "isStem":false
+              },
+              {
+                "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
+                "table":{"@ref":7},
+                "name":"day_of_birth",
+                "comment":"",
+                "valueCounts":null,
+                "isNullable":true,
+                "type":"INTEGER",
+                "description":"",
+                "maxLength":0,
+                "isStem":false
+              },
+              {
+                "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
+                "table":{"@ref":7},
+                "name":"time_of_birth",
+                "comment":"",
+                "valueCounts":null,
+                "isNullable":true,
+                "type":"CHARACTER VARYING",
+                "description":"",
+                "maxLength":0,
+                "isStem":false
+              },
+              {
+                "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
+                "table":{"@ref":7},
+                "name":"race_concept_id",
+                "comment":"",
+                "valueCounts":null,
+                "isNullable":false,
+                "type":"INTEGER",
+                "description":"",
+                "maxLength":0,
+                "isStem":false
+              },
+              {
+                "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
+                "table":{"@ref":7},
+                "name":"ethnicity_concept_id",
+                "comment":"",
+                "valueCounts":null,
+                "isNullable":false,
+                "type":"INTEGER",
+                "description":"",
+                "maxLength":0,
+                "isStem":false
+              },
+              {
+                "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
+                "table":{"@ref":7},
+                "name":"location_id",
+                "comment":"",
+                "valueCounts":null,
+                "isNullable":true,
+                "type":"INTEGER",
+                "description":"",
+                "maxLength":0,
+                "isStem":false
+              },
+              {
+                "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
+                "table":{"@ref":7},
+                "name":"provider_id",
+                "comment":"",
+                "valueCounts":null,
+                "isNullable":true,
+                "type":"INTEGER",
+                "description":"",
+                "maxLength":0,
+                "isStem":false
+              },
+              {
+                "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
+                "table":{"@ref":7},
+                "name":"care_site_id",
+                "comment":"",
+                "valueCounts":null,
+                "isNullable":true,
+                "type":"INTEGER",
+                "description":"",
+                "maxLength":0,
+                "isStem":false
+              },
+              {
+                "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
+                "table":{"@ref":7},
+                "name":"person_source_value",
+                "comment":"",
+                "valueCounts":null,
+                "isNullable":true,
+                "type":"CHARACTER VARYING",
+                "description":"",
+                "maxLength":0,
+                "isStem":false
+              },
+              {
+                "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
+                "table":{"@ref":7},
+                "name":"gender_source_value",
+                "comment":"",
+                "valueCounts":null,
+                "isNullable":true,
+                "type":"CHARACTER VARYING",
+                "description":"",
+                "maxLength":0,
+                "isStem":false
+              },
+              {
+                "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
+                "table":{"@ref":7},
+                "name":"gender_source_concept_id",
+                "comment":"",
+                "valueCounts":null,
+                "isNullable":true,
+                "type":"INTEGER",
+                "description":"",
+                "maxLength":0,
+                "isStem":false
+              },
+              {
+                "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
+                "table":{"@ref":7},
+                "name":"race_source_value",
+                "comment":"",
+                "valueCounts":null,
+                "isNullable":true,
+                "type":"CHARACTER VARYING",
+                "description":"",
+                "maxLength":0,
+                "isStem":false
+              },
+              {
+                "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
+                "table":{"@ref":7},
+                "name":"race_source_concept_id",
+                "comment":"",
+                "valueCounts":null,
+                "isNullable":true,
+                "type":"INTEGER",
+                "description":"",
+                "maxLength":0,
+                "isStem":false
+              },
+              {
+                "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
+                "table":{"@ref":7},
+                "name":"ethnicity_source_value",
+                "comment":"",
+                "valueCounts":null,
+                "isNullable":true,
+                "type":"CHARACTER VARYING",
+                "description":"",
+                "maxLength":0,
+                "isStem":false
+              },
+              {
+                "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
+                "table":{"@ref":7},
+                "name":"ethnicity_source_concept_id",
+                "comment":"",
+                "valueCounts":null,
+                "isNullable":true,
+                "type":"INTEGER",
                 "description":"",
                 "maxLength":0,
                 "isStem":false
@@ -1512,7 +2465,7 @@
           "@id":6,
           "@type":"org.ohdsi.rabbitInAHat.dataModel.Table",
           "db":{"@ref":3},
-          "name":"domain",
+          "name":"relationship",
           "rowCount":0,
           "comment":"",
           "fields":{
@@ -1521,7 +2474,7 @@
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
                 "table":{"@ref":6},
-                "name":"domain_id",
+                "name":"relationship_id",
                 "comment":"",
                 "valueCounts":null,
                 "isNullable":false,
@@ -1533,7 +2486,7 @@
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
                 "table":{"@ref":6},
-                "name":"domain_name",
+                "name":"relationship_name",
                 "comment":"",
                 "valueCounts":null,
                 "isNullable":false,
@@ -1545,7 +2498,43 @@
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
                 "table":{"@ref":6},
-                "name":"domain_concept_id",
+                "name":"is_hierarchical",
+                "comment":"",
+                "valueCounts":null,
+                "isNullable":false,
+                "type":"CHARACTER VARYING",
+                "description":"",
+                "maxLength":0,
+                "isStem":false
+              },
+              {
+                "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
+                "table":{"@ref":6},
+                "name":"defines_ancestry",
+                "comment":"",
+                "valueCounts":null,
+                "isNullable":false,
+                "type":"CHARACTER VARYING",
+                "description":"",
+                "maxLength":0,
+                "isStem":false
+              },
+              {
+                "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
+                "table":{"@ref":6},
+                "name":"reverse_relationship_id",
+                "comment":"",
+                "valueCounts":null,
+                "isNullable":false,
+                "type":"CHARACTER VARYING",
+                "description":"",
+                "maxLength":0,
+                "isStem":false
+              },
+              {
+                "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
+                "table":{"@ref":6},
+                "name":"relationship_concept_id",
                 "comment":"",
                 "valueCounts":null,
                 "isNullable":false,
@@ -1562,7 +2551,7 @@
           "@id":5,
           "@type":"org.ohdsi.rabbitInAHat.dataModel.Table",
           "db":{"@ref":3},
-          "name":"location",
+          "name":"vocabulary",
           "rowCount":0,
           "comment":"",
           "fields":{
@@ -1571,95 +2560,59 @@
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
                 "table":{"@ref":5},
-                "name":"location_id",
+                "name":"vocabulary_id",
+                "comment":"",
+                "valueCounts":null,
+                "isNullable":false,
+                "type":"CHARACTER VARYING",
+                "description":"",
+                "maxLength":0,
+                "isStem":false
+              },
+              {
+                "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
+                "table":{"@ref":5},
+                "name":"vocabulary_name",
+                "comment":"",
+                "valueCounts":null,
+                "isNullable":false,
+                "type":"CHARACTER VARYING",
+                "description":"",
+                "maxLength":0,
+                "isStem":false
+              },
+              {
+                "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
+                "table":{"@ref":5},
+                "name":"vocabulary_reference",
+                "comment":"",
+                "valueCounts":null,
+                "isNullable":true,
+                "type":"CHARACTER VARYING",
+                "description":"",
+                "maxLength":0,
+                "isStem":false
+              },
+              {
+                "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
+                "table":{"@ref":5},
+                "name":"vocabulary_version",
+                "comment":"",
+                "valueCounts":null,
+                "isNullable":true,
+                "type":"CHARACTER VARYING",
+                "description":"",
+                "maxLength":0,
+                "isStem":false
+              },
+              {
+                "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
+                "table":{"@ref":5},
+                "name":"vocabulary_concept_id",
                 "comment":"",
                 "valueCounts":null,
                 "isNullable":false,
                 "type":"INTEGER",
-                "description":"",
-                "maxLength":0,
-                "isStem":false
-              },
-              {
-                "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":5},
-                "name":"address_1",
-                "comment":"",
-                "valueCounts":null,
-                "isNullable":true,
-                "type":"CHARACTER VARYING",
-                "description":"",
-                "maxLength":0,
-                "isStem":false
-              },
-              {
-                "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":5},
-                "name":"address_2",
-                "comment":"",
-                "valueCounts":null,
-                "isNullable":true,
-                "type":"CHARACTER VARYING",
-                "description":"",
-                "maxLength":0,
-                "isStem":false
-              },
-              {
-                "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":5},
-                "name":"city",
-                "comment":"",
-                "valueCounts":null,
-                "isNullable":true,
-                "type":"CHARACTER VARYING",
-                "description":"",
-                "maxLength":0,
-                "isStem":false
-              },
-              {
-                "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":5},
-                "name":"state",
-                "comment":"",
-                "valueCounts":null,
-                "isNullable":true,
-                "type":"CHARACTER VARYING",
-                "description":"",
-                "maxLength":0,
-                "isStem":false
-              },
-              {
-                "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":5},
-                "name":"zip",
-                "comment":"",
-                "valueCounts":null,
-                "isNullable":true,
-                "type":"CHARACTER VARYING",
-                "description":"",
-                "maxLength":0,
-                "isStem":false
-              },
-              {
-                "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":5},
-                "name":"county",
-                "comment":"",
-                "valueCounts":null,
-                "isNullable":true,
-                "type":"CHARACTER VARYING",
-                "description":"",
-                "maxLength":0,
-                "isStem":false
-              },
-              {
-                "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":5},
-                "name":"location_source_value",
-                "comment":"",
-                "valueCounts":null,
-                "isNullable":true,
-                "type":"CHARACTER VARYING",
                 "description":"",
                 "maxLength":0,
                 "isStem":false
@@ -1672,92 +2625,6 @@
           "@id":4,
           "@type":"org.ohdsi.rabbitInAHat.dataModel.Table",
           "db":{"@ref":3},
-          "name":"relationship",
-          "rowCount":0,
-          "comment":"",
-          "fields":{
-            "@type":"java.util.ArrayList",
-            "@items":[
-              {
-                "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":4},
-                "name":"relationship_id",
-                "comment":"",
-                "valueCounts":null,
-                "isNullable":false,
-                "type":"CHARACTER VARYING",
-                "description":"",
-                "maxLength":0,
-                "isStem":false
-              },
-              {
-                "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":4},
-                "name":"relationship_name",
-                "comment":"",
-                "valueCounts":null,
-                "isNullable":false,
-                "type":"CHARACTER VARYING",
-                "description":"",
-                "maxLength":0,
-                "isStem":false
-              },
-              {
-                "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":4},
-                "name":"is_hierarchical",
-                "comment":"",
-                "valueCounts":null,
-                "isNullable":false,
-                "type":"CHARACTER VARYING",
-                "description":"",
-                "maxLength":0,
-                "isStem":false
-              },
-              {
-                "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":4},
-                "name":"defines_ancestry",
-                "comment":"",
-                "valueCounts":null,
-                "isNullable":false,
-                "type":"CHARACTER VARYING",
-                "description":"",
-                "maxLength":0,
-                "isStem":false
-              },
-              {
-                "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":4},
-                "name":"reverse_relationship_id",
-                "comment":"",
-                "valueCounts":null,
-                "isNullable":false,
-                "type":"CHARACTER VARYING",
-                "description":"",
-                "maxLength":0,
-                "isStem":false
-              },
-              {
-                "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":4},
-                "name":"relationship_concept_id",
-                "comment":"",
-                "valueCounts":null,
-                "isNullable":false,
-                "type":"INTEGER",
-                "description":"",
-                "maxLength":0,
-                "isStem":false
-              }
-            ]
-          },
-          "isStem":false
-        },
-        {
-          "@id":1,
-          "@type":"org.ohdsi.rabbitInAHat.dataModel.Table",
-          "db":{"@ref":3},
           "name":"entity",
           "rowCount":0,
           "comment":"",
@@ -1766,7 +2633,7 @@
             "@items":[
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":1},
+                "table":{"@ref":4},
                 "name":"id",
                 "comment":"",
                 "valueCounts":null,
@@ -1778,7 +2645,7 @@
               },
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":1},
+                "table":{"@ref":4},
                 "name":"entity_concept_id",
                 "comment":"",
                 "valueCounts":null,
@@ -1789,14 +2656,49 @@
                 "isStem":false
               },
               {
-                "@id":9,
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":1},
-                "name":"identified_by",
+                "table":{"@ref":4},
+                "name":"property_concept_id",
+                "comment":"",
+                "valueCounts":null,
+                "isNullable":true,
+                "type":"BIGINT",
+                "description":"",
+                "maxLength":0,
+                "isStem":false
+              },
+              {
+                "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
+                "table":{"@ref":4},
+                "name":"property_value_concept_id",
+                "comment":"",
+                "valueCounts":null,
+                "isNullable":true,
+                "type":"BIGINT",
+                "description":"",
+                "maxLength":0,
+                "isStem":false
+              },
+              {
+                "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
+                "table":{"@ref":4},
+                "name":"property_value_without_concept",
                 "comment":"",
                 "valueCounts":null,
                 "isNullable":true,
                 "type":"TEXT",
+                "description":"",
+                "maxLength":0,
+                "isStem":false
+              },
+              {
+                "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
+                "table":{"@ref":4},
+                "name":"entity_type_concept_id",
+                "comment":"",
+                "valueCounts":null,
+                "isNullable":true,
+                "type":"BIGINT",
                 "description":"",
                 "maxLength":0,
                 "isStem":false
@@ -1830,6 +2732,18 @@
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
                 "table":{"@ref":2},
+                "name":"measurement_concept_id",
+                "comment":"",
+                "valueCounts":null,
+                "isNullable":true,
+                "type":"BIGINT",
+                "description":"",
+                "maxLength":0,
+                "isStem":false
+              },
+              {
+                "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
+                "table":{"@ref":2},
                 "name":"entity_id",
                 "comment":"",
                 "valueCounts":null,
@@ -1842,20 +2756,7 @@
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
                 "table":{"@ref":2},
-                "name":"measurement_concept_id",
-                "comment":"",
-                "valueCounts":null,
-                "isNullable":true,
-                "type":"BIGINT",
-                "description":"",
-                "maxLength":0,
-                "isStem":false
-              },
-              {
-                "@id":11,
-                "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
-                "table":{"@ref":2},
-                "name":"measurement_value_concept_id",
+                "name":"value_as_concept_id",
                 "comment":"",
                 "valueCounts":null,
                 "isNullable":true,
@@ -1867,7 +2768,7 @@
               {
                 "@type":"org.ohdsi.rabbitInAHat.dataModel.Field",
                 "table":{"@ref":2},
-                "name":"measurement_value_as_value",
+                "name":"value_as_value",
                 "comment":"",
                 "valueCounts":null,
                 "isNullable":true,
@@ -1889,7 +2790,7 @@
     "@items":[
       {
         "@type":"org.ohdsi.rabbitInAHat.dataModel.ItemToItemMap",
-        "sourceItem":{"@ref":8},
+        "sourceItem":{"@ref":15},
         "cdmItem":{"@ref":1},
         "extraFieldToValue":{
           "@type":"java.util.HashMap"
@@ -1900,8 +2801,8 @@
       },
       {
         "@type":"org.ohdsi.rabbitInAHat.dataModel.ItemToItemMap",
-        "sourceItem":{"@ref":8},
-        "cdmItem":{"@ref":2},
+        "sourceItem":{"@ref":15},
+        "cdmItem":{"@ref":13},
         "extraFieldToValue":{
           "@type":"java.util.HashMap"
         },
@@ -1916,18 +2817,7 @@
     "@keys":[
       {
         "@type":"org.ohdsi.rabbitInAHat.dataModel.ItemToItemMap",
-        "sourceItem":{"@ref":8},
-        "cdmItem":{"@ref":2},
-        "extraFieldToValue":{
-          "@type":"java.util.HashMap"
-        },
-        "comment":"",
-        "logic":"",
-        "isCompleted":false
-      },
-      {
-        "@type":"org.ohdsi.rabbitInAHat.dataModel.ItemToItemMap",
-        "sourceItem":{"@ref":8},
+        "sourceItem":{"@ref":15},
         "cdmItem":{"@ref":1},
         "extraFieldToValue":{
           "@type":"java.util.HashMap"
@@ -1943,8 +2833,8 @@
         "@items":[
           {
             "@type":"org.ohdsi.rabbitInAHat.dataModel.ItemToItemMap",
-            "sourceItem":{"@ref":13},
-            "cdmItem":{"@ref":11},
+            "sourceItem":{"@ref":19},
+            "cdmItem":{"@ref":16},
             "extraFieldToValue":{
               "@type":"java.util.HashMap"
             },
@@ -1954,24 +2844,19 @@
           },
           {
             "@type":"org.ohdsi.rabbitInAHat.dataModel.ItemToItemMap",
-            "sourceItem":{"@ref":12},
-            "cdmItem":{"@ref":11},
+            "sourceItem":{"@ref":18},
+            "cdmItem":{"@ref":16},
             "extraFieldToValue":{
               "@type":"java.util.HashMap"
             },
             "comment":"",
             "logic":"",
             "isCompleted":false
-          }
-        ]
-      },
-      {
-        "@type":"java.util.ArrayList",
-        "@items":[
+          },
           {
             "@type":"org.ohdsi.rabbitInAHat.dataModel.ItemToItemMap",
-            "sourceItem":{"@ref":10},
-            "cdmItem":{"@ref":9},
+            "sourceItem":{"@ref":17},
+            "cdmItem":{"@ref":16},
             "extraFieldToValue":{
               "@type":"java.util.HashMap"
             },
