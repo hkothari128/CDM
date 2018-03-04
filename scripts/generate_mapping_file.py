@@ -107,7 +107,7 @@ def get_ids(records):
 	pprint(id_dict)
 
 def main():
-	path="../test.json"
+	path="./test.json"
 	with open(path,"r") as file:
 		json_str=file.read()
 		records=json.loads(json_str)

@@ -2,3 +2,4 @@ src_column,src_table,dest_column,dest_table
 id,ahs-mort-rajasthan-jhunjhunun.csv,identified_by,entity
 state,ahs-mort-rajasthan-jhunjhunun.csv,measurement_value_concept_id,measurements
 district,ahs-mort-rajasthan-jhunjhunun.csv,measurement_value_concept_id,measurements
+year_of_death,ahs-mort-rajasthan-jhunjhunun.csv,measurement_value_as_value,measurements

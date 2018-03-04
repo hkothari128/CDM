@@ -5,6 +5,7 @@ conn = psycopg2.connect(conn_string)
 cursor = conn.cursor()
 source=""
 mapping=list(tuple())
+source_concept_id=None
 def read_map():
 	with open("mapping.csv") as csv_file:
 		reader=csv.reader(csv_file)
@@ -20,16 +21,23 @@ def put_entity(item):
 		q="insert into concept(concept_name,domain_id)  values(%s,%s) returning concept_id;"
 		cursor.execute(q,(item,'Entity'))
 		concept_id=cursor.fetchone()[0]
-		q="insert into entity(entity_concept_id,identified_by) values("+str(concept_id)+",'"+ item +"')"
+		print("SRC ",source_concept_id)
+		q="insert into entity(entity_concept_id,identified_by,source_concept_id) values("+str(concept_id)+",'"+ item +"',"+ str(source_concept_id) +")"
 		cursor.execute(q)
 		conn.commit()
 
 def add_concept(item,domain):
 	if check(item,"concept","concept_name")==0:
-		q="insert into concept(concept_name,domain_id)  values(%s,%s) ;"
+		q="insert into concept(concept_name,domain_id)  values(%s,%s) returning concept_id;"
 		cursor.execute(q,(item,domain))
+		concept_id=cursor.fetchone()[0]
+		print(concept_id)
 		conn.commit()
 		add_domain(domain)
+	else:
+		cursor.execute("select concept_id from concept where concept_name='"+ item+"' and domain_id='"+ domain+"'")
+		concept_id=cursor.fetchone()[0]	
+	return concept_id
 		
 
 def check(item,dest_table,dest_column):
@@ -44,8 +52,8 @@ def add_domain(domain):
 		q="insert into concept(concept_name,domain_id)  values(%s,%s) returning concept_id;"
 		cursor.execute(q,(domain,'Metadata'))
 		concept_id=cursor.fetchone()[0]
-		q="insert into domain values(%s,%s,"+ str(concept_id) +")"
-		cursor.execute(q,(domain,domain))
+		q="insert into domain values('"+ str(domain) +"',"+ str(concept_id) +")"
+		cursor.execute(q)
 		conn.commit()
 
 def get_domains():
@@ -106,13 +114,13 @@ def insert():
 				measurement_concept_id=cursor.fetchone()[0]
 				if dest_column=="measurement_value_as_value":
 					q="insert into measurements(entity_id,measurement_concept_id,measurement_value_as_value)\
-					 values("+str(entity_id)+","+measurement_concept_id+",'"+ item +"')"
+					 values("+str(entity_id)+","+str(measurement_concept_id)+",'"+ item +"')"
 					cursor.execute(q)
 					conn.commit()
 				elif dest_column=="measurement_value_concept_id":
-					add_concept(item,"Measurement")
-					cursor.execute("select concept_id from concept where concept_name='"+ item+"' and domain_id='Measurement'")
-					value=cursor.fetchone()[0]
+					value=add_concept(item,"Measurement")
+					#cursor.execute("select concept_id from concept where concept_name='"+ item+"' and domain_id='Measurement'")
+					#value=cursor.fetchone()[0]
 					print("MEASUREMENT_ID: ",measurement_concept_id)
 					q="insert into measurements(entity_id,measurement_concept_id,measurement_value_concept_id)\
 					 values("+str(entity_id)+","+str(measurement_concept_id)+","+ str(value) +")"
@@ -123,16 +131,24 @@ def insert():
 			#print("item: ",record[column_number_in_src])
 			
 			#print(source_column,":",column_number_in_src)
-		if(count==5):
+		if(count==1):
 			break
 		count=count+1
 	
-			
+def initialize():
+	source_table=mapping[1][1]
+	#print (source_table)
+	add_domain("Source")
+	global source_concept_id
+	source_concept_id = add_concept(source_table,"Source")
+	cursor.execute("insert into source(source_name,source_concept_id,url) values('"+ source_table + "',"+ str(source_concept_id) +",null)")
+	conn.commit()		
 if __name__ == '__main__':
 	path="ahs-mort-uttarakhand-nainital.csv"
 	source=open(path)
 	
 	read_map()
+	initialize()
 	get_domains()
 	insert()
 	#something()
