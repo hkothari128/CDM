@@ -1,0 +1,9 @@
+﻿ALTER SEQUENCE concept_concept_id_seq RESTART WITH 1;
+ALTER SEQUENCE public."Entity_id_seq" RESTART WITH 1;
+ALTER SEQUENCE public."measurements_id_seq" REstart with 1;
+ALTER SEQUENCE public."source_id_seq" REstart with 1;
+delete from source;
+delete from measurements;
+delete from entity;
+delete from concept;
+delete from domain;
