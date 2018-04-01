@@ -1,0 +1,4 @@
+src_column,src_table,dest_column,dest_table
+Facility Name,geocode_health_centre.csv,identified_by,entity
+State,geocode_health_centre.csv,measurement_value_concept_id,measurements
+District,geocode_health_centre.csv,measurement_value_concept_id,measurements

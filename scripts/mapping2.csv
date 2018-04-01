@@ -1,0 +1,6 @@
+src_column,src_table,dest_column,dest_table
+state,No_Of_Still_Births_1.csv,identified_by,entity
+Total No. of pregnancy outcome (2009-10),No_Of_Still_Births_1.csv,measurement_value_as_value,measurements
+Number of Still Births (2009-10),No_Of_Still_Births_1.csv,measurement_value_as_value,measurements
+Total No. of pregnancy outcome (2010-11),No_Of_Still_Births_1.csv,measurement_value_as_value,measurements
+Number of Still Births (2010-11),No_Of_Still_Births_1.csv,measurement_value_as_value,measurements
