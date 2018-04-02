@@ -6,6 +6,7 @@
 </head>
 <body>
 <div class="container">
+	<h1 style="font-size: 28px; text-align: center; text-decoration: bold"> WHITE RABBIT USER GUIDE</h1>
 	<ol>
 		<li>
 			<h2> 1.To open the WHITE RABBIT tool, go to the ETL directory</h2>
@@ -13,8 +14,63 @@
 		</li>
 		<li>
 			<h2> 2. Open the jar file named <i>WhiteRabbit.jar</i></h2>
-			<h3> Linux/mac:<br> command:- java -jar WhiteRabbit.jar</h3>
-			<h3> Windows:<br> command:- javaw.exe -jar WhiteRabbit.jar</h3>
+			<p> Linux/mac:<br> command:- java -jar WhiteRabbit.jar</p>
+			<p> Windows:<br> command:- javaw.exe -jar WhiteRabbit.jar</p>
+		</li>
+		<li>
+			<h2>3.Using the tool</h2>
+			<h2> Specify the Location of Data</h2>
+			<img src="images/WR_1.png">
+			<p><b>Working Folder</b><br><br>Any files that WhiteRabbit creates will be exported to this local folder. Use the “Pick Folder” button to navigate in your local environment where you would like the scan document to go.</p>
+			<p><b>Source Data</b><br><br>Here you can specify the location of the source data. The following source types are supported: delimited text files, MySQL, Oracle, SQL Server, and PostgreSQL. Below are connection instructions for each data type of data source. Once you have entered the necessary information, the “Test connection” button can ensure a connection can be made.</p>
+			<p><b>Delimited text files</b><br><br>&nbsp&nbsp <b>Delimiter</b>: specifies the delimiter that separates columns, default is ‘,’ and your can write ‘tab’ for tab delimited.<br><br>WhiteRabbit will look for the files to scan in the same folder you set up as a working directory.</p>
+			<p><b>MySQL</b><br>
+				<ul>
+					<li>
+						<b>Server location</b>: the name or IP address of the server running MySQL. You can also specify the port (ex: <host>:<port>), which defaults to 3306.
+					</li>
+					<li>
+						<b>User name</b>: name of the user used to log into the server
+					</li>
+					<li>
+						<b>Password</b>: password for the supplied user name
+					</li>
+					<li>
+						<b>Database Tables</b>: name of the database containing the tables
+					</li>
+				</ul>
+			</p>
+			<p><b>PostgreSQL</b><br>
+				<ul>
+					<li>
+						<b>Server location</b>: this field contains the host name and database name.
+					</li>
+					<li>
+						<b>User name</b>: name of the user used to log into the server
+					</li>
+					<li>
+						<b>Password</b>: password for the supplied user name
+					</li>
+					<li>
+						<b>Database Tables</b>: this field contains the schema containing the source tables
+					</li>
+				</ul>
+			</p>
+			
+		</li>
+		<li>
+			<h2> Performing a scan</h2>
+			
+			<br><br>
+			<p>A scan generates a report containing information on the source data that can be used to help design the ETL. Using the Scan tab in WhiteRabbit you can either select individual tables in the selected source database by clicking on ‘Add’ (Ctrl + mouse click)</p>
+			<img style="border:1px solid;" src="images/WR_2.png">
+			
+			<p> Once you have selected the file click on scan button to generate scan report</p>
+			<img style="border:1px solid;" src="images/WR_3.png">
+			
+			<p> A scan report will be generated in your working folder, <b>upload this scan file to the second ETL tool, i.e Rabbit-In-a-Hat</b></p>
+			<img style="border:1px solid;" src="images/WR_4.png">
+			
 		</li>
 	</ol>	
 </div>

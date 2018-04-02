@@ -1,20 +1,28 @@
 .container{
 	margin: 0 auto;
 	width: 75%;
-	background-color:#eee;
+	background-color:#fefefe;
 	min-height: 80vh;
-	text-align: center;
-	padding: 100px;
+	text-align: left;
+	padding-top: 30px;
+	padding-bottom: 30px;
 }
 .container ol{
 	list-style: none;
+	text-align: justify; 
+	margin-left: 10%;
 }
-.container li{
+
+ol >  li{
+
 	margin-top: 20px;
 	margin-bottom: 20px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #ddd;
 }
 img{
-	
-	width:30%;
-	height: 300px;
+	margin-left: 10%;
+	width:50%;
+	height: 400px;
+	border:1px solid #ddd;
 }
