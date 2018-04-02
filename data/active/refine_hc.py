@@ -6,14 +6,22 @@ with open("geocode_health_centre.csv") as csv_file:
 	csvReader = csv.reader(csv_file)
 	file=[]
 	row=next(csvReader)
+	row=next(csvReader)
 	name=row[0]
 	counter=0
 	for row in csvReader:
-
-		while(row[0]==name):
+		print(name)
+		
+		if(row[0]==name):
 			file.append(row)
-			
-		for r in file[:len(file)/10]:
+			counter+=1
+			print(counter)
+			continue
+		
+		counter=0
+		l=len(file)/10
+		for r in file[:int(l)]:
 			csv_writer.writerow(r)
 		file=[]
 		name=row[0]
+write_file.close()

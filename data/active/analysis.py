@@ -48,9 +48,18 @@ group by state\
 order by state"
 
 join=
-"select still_births.state,pregnant_deaths,care_sites,total_outcome,still_births\
-from mortality join care_sites join total_outcomes join still_births on\
-mortality.state=care_sites.state and\
-care_sites.state=total_outcomes.state and\
-total_outcomes.state=still_births.state\
-order by still_births.state"
+"select * from mortality natural join care_sites natural join total_outcomes natural join still_births order by state"
+
+import psycopg2
+import csv
+
+conn_string = "host='localhost' dbname='MyCDM' user='developer' password='developer'"
+conn = psycopg2.connect(conn_string)
+cursor = conn.cursor()
+
+outputquery = "COPY ({0}) TO STDOUT WITH CSV HEADER".format(join)
+
+with open('resultsfile', 'w') as f:
+    cursor.copy_expert(outputquery, f)
+
+conn.close()

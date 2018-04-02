@@ -9,7 +9,7 @@ source=""
 mapping=list(tuple())
 source_concept_id=None
 def read_map():
-	with open("mapping2.csv") as csv_file:
+	with open("mapping1.csv") as csv_file:
 		reader=csv.reader(csv_file)
 		for row in reader:
 			mapping.append(row)
@@ -235,7 +235,7 @@ def initialize(file):
 '''
 if __name__ == '__main__':
 	path="../data/active/"
-	file="No_Of_Still_Births_1.csv"
+	file="geocode_refined.csv"
 	read_map()
 	source=open(path+file)
 	initialize(file)
