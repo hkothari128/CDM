@@ -2,7 +2,7 @@ import csv
 import psycopg2
 import os
 
-conn_string = "host='localhost' dbname='MyCDM' user='developer' password='developer'" # connection string
+conn_string = "host='localhost' dbname='myCDM' user='developer' password='developer'" # connection string
 conn = psycopg2.connect(conn_string)
 cursor = conn.cursor()	
 source=""				# file object for source file
@@ -10,7 +10,7 @@ mapping=list(tuple())	# stores mapping file
 source_concept_id=None # stores concept_id of current file being inserted
 
 def read_map():	# reads mapping file into a dictionary
-	with open("mapping.csv") as csv_file:
+	with open("mapping2.csv") as csv_file:
 		reader=csv.reader(csv_file)
 		for row in reader:
 			mapping.append(row)
@@ -75,6 +75,17 @@ def check_row(items,dest_table,dest_columns):	# check if a provided row exists i
 	for i in range(len(items)-1):
 		q+=dest_columns[i].lower()+"='"+ items[i].lower() +"' and "
 	q+=dest_columns[-1].lower()+"='"+ items[-1].lower() +"'"		
+	cursor.execute(q)
+	result=cursor.fetchone()
+	return result[0]
+
+def check_measurement(items,is_value=False):	# check if a provided row exists in a provided table, returns 0 if not exists
+	q="select count(*) from measurements where entity_id= "+ str(items[0]) +" and measurement_concept_id= "+ str(items[1])
+	if is_value:
+		q+="and measurement_value_as_value='"+ str(items[2]) +"'"
+	else:
+		q+="and measurement_value_concept_id= "+ str(items[2])+""
+	
 	cursor.execute(q)
 	result=cursor.fetchone()
 	return result[0]
@@ -148,19 +159,21 @@ def add_measurement(item,entity,source_column,dest_column):			# adds measurement
 	measurement_concept_id=cursor.fetchone()[0]
 
 	if dest_column=="measurement_value_as_value":	#if direct value is to be inserted into measurement
-		q="insert into measurements(entity_id,measurement_concept_id,measurement_value_as_value)\
-		 values("+str(entity_id)+","+str(measurement_concept_id)+",'"+ item.lower() +"')" 		
-		cursor.execute(q)
-		conn.commit()
+		if check_measurement([entity_id,measurement_concept_id,item.lower()],True)==0:
+			q="insert into measurements(entity_id,measurement_concept_id,measurement_value_as_value)\
+			 values("+str(entity_id)+","+str(measurement_concept_id)+",'"+ item.lower() +"')" 		
+			cursor.execute(q)
+			conn.commit()
 	elif dest_column=="measurement_value_concept_id": #if a concept value is to be inserted into measurement
 		value=add_concept(item,"Measurement")			#value to be inserted is made a concept and concept_id returned
-		#cursor.execute("select concept_id from concept where concept_name='"+ item+"' and domain_id='Measurement'")
-		#value=cursor.fetchone()[0]
-		
-		q="insert into measurements(entity_id,measurement_concept_id,measurement_value_concept_id)\
-		 values("+str(entity_id)+","+str(measurement_concept_id)+","+ str(value).lower() +")"
-		cursor.execute(q)
-		conn.commit()
+		if check_measurement([entity_id,measurement_concept_id,value])==0:
+			#cursor.execute("select concept_id from concept where concept_name='"+ item+"' and domain_id='Measurement'")
+			#value=cursor.fetchone()[0]
+			
+			q="insert into measurements(entity_id,measurement_concept_id,measurement_value_concept_id)\
+			 values("+str(entity_id)+","+str(measurement_concept_id)+","+ str(value).lower() +")"
+			cursor.execute(q)
+			conn.commit()
 
 
 
@@ -185,6 +198,8 @@ def insert():				#insertion script
 				
 
 			elif(dest_table=="measurements"):	# if measurement is to be inserted
+				#if "state" in source_column:
+					#print(item)
 				add_measurement(item,entity,source_column,dest_column)
 
 			
@@ -196,7 +211,8 @@ def initialize(file):					# add source file to source table
 	add_domain("Source")				
 	global source_concept_id
 	source_concept_id = add_concept(source_table,"Source")	# get concept_id of added source_file
-	cursor.execute("insert into source(source_name,source_concept_id,url) values('"+ source_table.lower() + "',"+ str(source_concept_id).lower() +",null)")
+	if check(source_table,"source","source_name",)==0:
+		cursor.execute("insert into source(source_name,source_concept_id,url) values('"+ source_table.lower() + "',"+ str(source_concept_id).lower() +",null)")
 	conn.commit()	
 
 '''if __name__ == '__main__':					# for batch insert
@@ -204,7 +220,7 @@ def initialize(file):					# add source file to source table
 	files=os.listdir(path)
 	files=[f for f in files if ".py" not in f ]
 	read_map()
-
+	counter =0 
 	for file in files:			
 		if file.startswith("."):
 			continue
@@ -213,12 +229,13 @@ def initialize(file):					# add source file to source table
 		temp_domains()
 		#get_domains()
 		insert()
-		
+		counter+=1
+		print("********************************* ",counter,"***********************************88")
 	source.close()	'''
 
 if __name__ == '__main__':
 	path="../data/active/"
-	file="geocode_refined.csv"
+	file="No_Of_Still_Births_1.csv"
 	read_map()
 	source=open(path+file)
 	initialize(file)

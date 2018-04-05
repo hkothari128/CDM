@@ -1,0 +1,162 @@
+State,District,Subdistrict Name,Facility Type,Facility Name,Facility Address,Latitude,Longitude,ActiveFlag_C,NOTIONAL_PHYSICAL,Location Type,Type Of Facility,Nin_N
+West Bengal,Udham Singh Nagar,Khatima,chc,Khatima,NA,28.922804,79.965615,Y,Physical,Urban,Public,NA
+West Bengal,Udham Singh Nagar,Sitarganj,chc,Sitarganj,NA,28.926388,79.704952,Y,Physical,Urban,Public,NA
+West Bengal,Udham Singh Nagar,Gadarpur,chc,Gadarpur,NA,29.046999,79.239327,Y,Physical,Urban,Public,NA
+West Bengal,Udham Singh Nagar,Bajpur,chc,Bajpur,NA,29.166708,79.146557,Y,Physical,Rural,Public,NA
+West Bengal,Nainital,Kotabhag,chc,Kaladhungi CHC,NA,29.2499,79.3136,Y,Physical,Rural,Public,NA
+West Bengal,Udham Singh Nagar,Jaspur,chc,Jaspur,NA,29.275353,78.828231,Y,Physical,Urban,Public,NA
+West Bengal,Nainital,Kotabhag,chc,Kotabhag,NA,29.283308,79.349992,Y,Physical,Rural,Public,NA
+West Bengal,Champawat,Champawat,chc,CHC Champawat,NA,29.3356167,80.0902372,Y,Physical,Rural,Public,NA
+West Bengal,Nainital,Bhimtal,chc,Bhimtal CHC,NA,29.33975,79.58775,Y,Physical,Rural,Public,NA
+West Bengal,Almora,Chakhutiya,chc,CHC Chakhutiya,NA,29.36,79.3,Y,Physical,Rural,Public,NA
+West Bengal,Nainital,Ramgarh,chc,Ramgarh CHC,NA,29.37136,79.48951,Y,Physical,Rural,Public,NA
+West Bengal,Hardwar,Khanpur,chc,"CHC,Khanpur",NA,29.38,78,Y,Physical,Rural,Public,NA
+West Bengal,Nainital,Bhimtal,chc,Bhowali,NA,29.38475,79.52565,Y,Physical,Rural,Public,NA
+West Bengal,Nainital,Betalghat,chc,Betalghat,NA,29.38925,79.49465,Y,Physical,Rural,Public,NA
+West Bengal,Nainital,Betalghat,chc,Garampani,NA,29.38925,79.4791,Y,Physical,Rural,Public,NA
+West Bengal,Nainital,Ramgarh,chc,Suyalbari CHC,NA,29.38925,79.4791,Y,Physical,Rural,Public,NA
+West Bengal,Champawat,Lohaghat,chc,Lohaghat CHC,NA,29.4034866,80.0943366,Y,Physical,Rural,Public,NA
+West Bengal,Almora,Lamgara,chc,CHC  Jainti,NA,29.4815377,79.8264932,Y,Physical,Rural,Public,NA
+West Bengal,Hardwar,Bahadrabad,chc,"CHC,Bahadrabad",NA,29.55,78.02,Y,Physical,Rural,Public,NA
+West Bengal,Pithoragarh,Munsyari,chc,Munsyari,NA,29.5556,80.2297,Y,Physical,Rural,Public,NA
+West Bengal,Pithoragarh,Gangolihat,chc,Gangolihat CHC,NA,29.6545,80.214,Y,Physical,Rural,Public,NA
+West Bengal,Almora,Bhikiyasen,chc,CHC Bhikiyasen,NA,29.6966934,79.265627,Y,Physical,Rural,Public,NA
+West Bengal,Hardwar,Laksar,chc,"CHC,Laksar",NA,29.77055,78.15058,Y,Physical,Rural,Public,NA
+West Bengal,Almora,Dwarahat,chc,CHC Dwarahat,NA,29.79315,79.4569,Y,Physical,Rural,Public,NA
+West Bengal,Pithoragarh,Didihat,chc,CHC Didihat,NA,29.8209,80.1931,Y,Physical,Rural,Public,NA
+West Bengal,Garhwal,Bironkhal,chc,Bironkhal CHC,NA,29.845422,79.033058,Y,Physical,Rural,Public,NA
+West Bengal,Pithoragarh,Dharchula,chc,CHC Dharchula,NA,29.84735,80.53689,Y,Physical,Rural,Public,NA
+West Bengal,Bageshwar,Kapkote,chc,Kapkote,NA,29.9463902,79.9029957,Y,Physical,Rural,Public,NA
+West Bengal,Bageshwar,Baijnath,chc,Baijnath,NA,29.95651,79.56756,Y,Physical,Rural,Public,NA
+West Bengal,Garhwal,Kaljikhal,chc,Ghandiyal CHC,NA,30.01473,78.416473,Y,Physical,Rural,Public,NA
+West Bengal,Garhwal,Thailisan,chc,Thalisain CHC,NA,30.022032,79.04778,Y,Physical,Rural,Public,NA
+West Bengal,Dehradun,Sahaspur,chc,Mussoorie,NA,30.0271488,78.453141,Y,Physical,Rural,Public,1787186731
+West Bengal,Garhwal,Pabau,chc,Pabau CHC,NA,30.055055,78.564957,Y,Physical,Rural,Public,NA
+West Bengal,Chamoli,Tharali,chc,Tharali CHC,NA,30.0807761,79.4908352,Y,Physical,Rural,Public,NA
+West Bengal,Dehradun,Doiwala,chc,Doiwala,NA,30.107764,78.073759,Y,Physical,Rural,Public,4151131580
+West Bengal,Tehri Garhwal,Devprayag,chc,CHC Devprayag,NA,30.1578,78.59895,Y,Physical,Rural,Public,NA
+West Bengal,Dehradun,Raipur,chc,Raipur,NA,30.183987,78.060875,Y,Physical,Rural,Public,8388631627
+West Bengal,Tehri Garhwal,Kirtinagar,chc,CHC Kirtinagar,NA,30.21603333,78.74688333,Y,Physical,Rural,Public,NA
+West Bengal,Tehri Garhwal,Devprayag,chc,CHC Hindolakhal,NA,30.231996,78.6044052,Y,Physical,Rural,Public,NA
+West Bengal,Dehradun,Sahaspur,chc,Sahaspur,NA,30.232485,77.487181,Y,Physical,Rural,Public,8168328451
+West Bengal,Dehradun,Vikasnagar,chc,Vikasnagar,NA,30.281677,77.465362,Y,Physical,Rural,Public,7735853371
+West Bengal,Uttarkashi,Chinyalisaour,chc,Chinyalisaour,NA,30.348371,78.197379,Y,Physical,Rural,Public,NA
+West Bengal,Dehradun,Kalsi,chc,Sahiya,NA,30.366389,77.525393,Y,Physical,Rural,Public,8473654658
+West Bengal,Dehradun,Chakrata,chc,Chakrata,NA,30.412052,77.524362,Y,Physical,Rural,Public,7746461768
+West Bengal,Tehri Garhwal,Bhilangna,chc,CHC Beleshwer,NA,30.46235,78.6356,Y,Physical,Rural,Public,NA
+West Bengal,Uttarkashi,Naugaon,chc,Barkot CHC,NA,30.484382,78.124109,Y,Physical,Rural,Public,NA
+West Bengal,Tehri Garhwal,Jaunpur,chc,CHC Thatyur,NA,30.48855,78.0465,Y,Physical,Rural,Public,NA
+West Bengal,Uttarkashi,Purola,chc,Purola,NA,30.529258,78.053043,Y,Physical,Rural,Public,NA
+West Bengal,Chamoli,Joshimath,chc,Joshimath CHC,NA,30.5530543,79.562593,Y,Physical,Rural,Public,NA
+West Bengal,Rudraprayag,Augustmuni,chc,Augustmuni,NA,3023481,7901372,Y,Physical,Rural,Public,NA
+West Bengal,Rudraprayag,Jakholi,chc,Jakholi,NA,3023519,7853691,Y,Physical,Rural,Public,NA
+West Bengal,Chamoli,Gairsain,chc,Gairsain CHC,NA,30032118,79173875,Y,Physical,Rural,Public,NA
+West Bengal,Chamoli,Karanprayag,chc,Karanprayag CHC,NA,30155795,79129701,Y,Physical,Rural,Public,NA
+West Bengal,Chamoli,Pokhari,chc,Pokhari CHC,NA,30206430,79119101,Y,Physical,Rural,Public,NA
+West Bengal,Hardwar,Narsan,chc,"CHC,Narsan",NA,29.42.0418,077.50.9341,Y,Physical,Rural,Public,NA
+West Bengal,Hardwar,Narsan,chc,"CHC,Manglore",NA,30.15.6846,078.05.9244,Y,Physical,Urban,Public,NA
+West Bengal,Hardwar,Bhagwanpur,chc,"CHC,Bhagwanpur",NA,30.15.6864,078.05.9272,Y,Physical,Rural,Public,NA
+West Bengal,Uttarkashi,Naugaon,chc,Naugaon,NA,30.47.6380,78.08.8176,Y,Physical,Rural,Public,NA
+West Bengal,Udham Singh Nagar,Rudrapur,dis_h,J.L.N. District Hospital,NA,28.991394,79.401348,Y,Physical,Rural,Public,NA
+West Bengal,Champawat,Champawat,dis_h,DH Champawat,NA,29.3360974,80.0910275,Y,Physical,Rural,Public,NA
+West Bengal,Nainital,Bhimtal,dis_h,B.D.Pandey Male Hospital,NA,29.3868702,79.459833,Y,Physical,Rural,Public,NA
+West Bengal,Nainital,Bhimtal,dis_h,B.D.Pandey Female Hospital,NA,29.3868702,79.459833,Y,Physical,Rural,Public,NA
+West Bengal,Hardwar,Bahadrabad,dis_h,HMG Hospital Hardwar,NA,29.570314,78.096534,Y,Physical,Rural,Public,NA
+West Bengal,Hardwar,Bahadrabad,dis_h,CR Women Govt Hospital,NA,29.570806,78.096895,Y,Physical,Rural,Public,NA
+West Bengal,Almora,Hwalbagh,dis_h,Distt Female Hosptial,NA,29.5894787,79.6436417,Y,Physical,Rural,Public,NA
+West Bengal,Almora,Hwalbagh,dis_h,Distt Hosptial Almora,NA,29.754842,79.423918,Y,Physical,Rural,Public,NA
+West Bengal,Pithoragarh,Bin,dis_h,H G Pant District Female Hospital,NA,29.7756,80.0569,Y,Physical,Rural,Public,NA
+West Bengal,Pithoragarh,Bin,dis_h,B D Pandey District Male Hospital,NA,29.7766,80.0569,Y,Physical,Rural,Public,NA
+West Bengal,Bageshwar,Bageshwar,dis_h,Shyam Lal Shah DH,NA,29.8384823,79.7764237,Y,Physical,Rural,Public,NA
+West Bengal,Garhwal,Pauri,dis_h,DH Female Pauri,NA,30.085946,78.462692,Y,Physical,Rural,Public,NA
+West Bengal,Garhwal,Pauri,dis_h,DH Pauri,NA,30.09033,78.462562,Y,Physical,Rural,Public,NA
+West Bengal,Dehradun,Raipur,dis_h,Doon Female Hospital,NA,30.191185,78.024982,Y,Physical,Rural,Public,3823816479
+West Bengal,Dehradun,Raipur,dis_h,Doon Male Hospital,NA,30.19166,78.25545,Y,Physical,Rural,Public,2284767759
+West Bengal,Chamoli,Dasholi,dis_h,District Hospital,NA,30.245929,79.192395,Y,Physical,Rural,Public,NA
+West Bengal,Rudraprayag,Augustmuni,dis_h,District Hospital Rudraprayag,NA,30.2842818,78.9783908,Y,Physical,Rural,Public,NA
+West Bengal,Tehri Garhwal,Chamba,dis_h,DH Bauradi,NA,30.37991667,78.43663333,Y,Physical,Rural,Public,NA
+West Bengal,Uttarkashi,Bhatwari,dis_h,District Hospital,NA,30.437734,78.265824,Y,Physical,Rural,Public,NA
+West Bengal,Uttarkashi,Bhatwari,dis_h,District Female Hospital,NA,30.437734,78.265824,Y,Physical,Rural,Public,NA
+West Bengal,Udham Singh Nagar,Bajpur,phc,Kelakhera,NA,28.087399,79.174382,Y,Physical,Rural,Public,NA
+West Bengal,Udham Singh Nagar,Sitarganj,phc,Mainajahundi,NA,28.86716,79.724951,Y,Physical,Rural,Public,NA
+West Bengal,Udham Singh Nagar,Rudrapur,phc,Bara,NA,28.886246,79.559555,Y,Physical,Rural,Public,NA
+West Bengal,Udham Singh Nagar,Khatima,phc,Partappur,NA,28.904911,79.855156,Y,Physical,Rural,Public,NA
+West Bengal,Udham Singh Nagar,Khatima,phc,Nagla Tarai,NA,28.92674,79.92674,Y,Physical,Rural,Public,NA
+West Bengal,Udham Singh Nagar,Sitarganj,phc,Nanakmatha,NA,28.941476,79.815521,Y,Physical,Rural,Public,NA
+West Bengal,Udham Singh Nagar,Khatima,phc,Chakarpur,NA,28.954381,79.999352,Y,Physical,Rural,Public,NA
+West Bengal,Udham Singh Nagar,Rudrapur,phc,Narayanpur,NA,28.963773,79.473038,Y,Physical,Rural,Public,NA
+West Bengal,Udham Singh Nagar,Rudrapur,phc,Shantipur,NA,28.992306,79.542732,Y,Physical,Rural,Public,NA
+West Bengal,Udham Singh Nagar,Khatima,phc,Deuri,NA,28.999132,79.92691,Y,Physical,Rural,Public,NA
+West Bengal,Champawat,Champawat,phc,Banbasa APHC,NA,29.0063,80.08684,Y,Physical,Rural,Public,NA
+West Bengal,Udham Singh Nagar,Gadarpur,phc,Mohanpur,NA,29.006873,79.2955,Y,Physical,Rural,Public,NA
+West Bengal,Udham Singh Nagar,Sitarganj,phc,Shaktiform,NA,29.013057,79.645729,Y,Physical,Rural,Public,NA
+West Bengal,Udham Singh Nagar,Gadarpur,phc,Sakainya,NA,29.033292,79.184177,Y,Physical,Rural,Public,NA
+West Bengal,Udham Singh Nagar,Gadarpur,phc,Dineshpur,NA,29.043817,79.316914,Y,Physical,Rural,Public,NA
+West Bengal,Udham Singh Nagar,Gadarpur,phc,Gularbhoj,NA,29.091882,79.316862,Y,Physical,Rural,Public,NA
+West Bengal,Udham Singh Nagar,Bajpur,phc,Bariya Daulat,NA,29.128343,79.234058,Y,Physical,Rural,Public,NA
+West Bengal,Udham Singh Nagar,Bajpur,phc,Sultanpur Patti,NA,29.157988,79.061832,Y,Physical,Rural,Public,NA
+West Bengal,Udham Singh Nagar,Kashipur,phc,Parmanandpur,NA,29.167751,79.050751,Y,Physical,Rural,Public,NA
+West Bengal,Udham Singh Nagar,Kashipur,phc,Narayannagar,NA,29.18214,79.002686,Y,Physical,Rural,Public,NA
+West Bengal,Udham Singh Nagar,Jaspur,phc,Raipur,NA,29.191455,78.915687,Y,Physical,Rural,Public,NA
+West Bengal,Udham Singh Nagar,Bajpur,phc,Haripura Harsan,NA,29.198883,79.240286,Y,Physical,Rural,Public,NA
+West Bengal,Nainital,Haldwani,phc,PHC Chorgaliya,NA,29.216709,79.516691,Y,Physical,Rural,Public,NA
+West Bengal,Nainital,Haldwani,phc,Kathgodam,NA,29.22,79.52,Y,Physical,Urban,Public,NA
+West Bengal,Nainital,Haldwani,phc,Rajpura,NA,29.22,79.52,Y,Physical,Urban,Public,NA
+West Bengal,Nainital,Haldwani,phc,Mangal Parow,NA,29.22,79.52,Y,Physical,Urban,Public,NA
+West Bengal,Nainital,Haldwani,phc,Shani Bazar,NA,29.22,79.52,Y,Physical,Urban,Public,NA
+West Bengal,Udham Singh Nagar,Jaspur,phc,Lalpur,NA,29.222595,78.909992,Y,Physical,Rural,Public,NA
+West Bengal,Udham Singh Nagar,Kashipur,phc,Dhakiya,NA,29.231287,79.019165,Y,Physical,Rural,Public,NA
+West Bengal,Udham Singh Nagar,Bajpur,phc,Bannakhara,NA,29.238668,79.160274,Y,Physical,Rural,Public,NA
+West Bengal,Nainital,Okhalkanda,phc,Okhalkanda,NA,29.26418,79.81031,Y,Physical,Rural,Public,NA
+West Bengal,Champawat,Champawat,phc,Manch APHC,NA,29.28216,80.17006,Y,Physical,Rural,Public,NA
+West Bengal,Udham Singh Nagar,Jaspur,phc,Gadhinegi,NA,29.282571,78.947392,Y,Physical,Rural,Public,NA
+West Bengal,Udham Singh Nagar,Jaspur,phc,Patrampur,NA,29.337506,78.883256,Y,Physical,Rural,Public,NA
+West Bengal,Nainital,Dhari,phc,Padampuri,NA,29.33975,79.58775,Y,Physical,Rural,Public,NA
+West Bengal,Nainital,Bhimtal,phc,PHC Jyolikot,NA,29.344092,79.481347,Y,Physical,Rural,Public,NA
+West Bengal,Hardwar,Khanpur,phc,"APHC,Chandpuri",NA,29.36,77.59,Y,Physical,Rural,Public,NA
+West Bengal,Almora,Chakhutiya,phc,Masi APHC,NA,29.37,79.31,Y,Physical,Rural,Public,NA
+West Bengal,Nainital,Ramnagar,phc,PHC Kaniya,NA,29.3803109,79.4635588,Y,Physical,Rural,Public,NA
+West Bengal,Nainital,Okhalkanda,phc,PHC Jasyuda,NA,29.38477,79.52567,Y,Physical,Rural,Public,NA
+West Bengal,Nainital,Betalghat,phc,PHC Uchakot,NA,29.38925,79.49465,Y,Physical,Rural,Public,NA
+West Bengal,Nainital,Ramnagar,phc,PHC Pirumdara,NA,29.3952578,79.1202692,Y,Physical,Rural,Public,NA
+West Bengal,Champawat,Lohaghat,phc,Pulla PHC,NA,29.39655,80.13317,Y,Physical,Rural,Public,NA
+West Bengal,Champawat,pati,phc,Pati PHC,NA,29.403809,80.090117,Y,Physical,Rural,Public,NA
+West Bengal,Almora,Salt,phc,Salt  PHC,NA,29.41956,79.0447,Y,Physical,Rural,Public,NA
+West Bengal,Hardwar,Narsan,phc,"APHC,Lakhnota",NA,29.43,77.49,Y,Physical,Rural,Public,NA
+West Bengal,Hardwar,Narsan,phc,"APHC,Mundlana",NA,29.44,77.54,Y,Physical,Rural,Public,NA
+West Bengal,Pithoragarh,Bin,phc,APHC Nakot,NA,29.466,80.133,Y,Physical,Rural,Public,NA
+West Bengal,Bageshwar,Baijnath,phc,Kandhar,NA,29.47825,79.95189,Y,Physical,Rural,Public,NA
+West Bengal,Bageshwar,Baijnath,phc,Jakhera,NA,29.47825,79.95189,Y,Physical,Rural,Public,NA
+West Bengal,Hardwar,Narsan,phc,"APHC,Jhabreda",NA,29.48,77.46,Y,Physical,Rural,Public,NA
+West Bengal,Hardwar,Narsan,phc,"APHC,Landora",NA,29.48,77.56,Y,Physical,Rural,Public,NA
+West Bengal,Almora,Syaldey,phc,Syaldey Deghat,NA,29.4806,79.2611,Y,Physical,Rural,Public,NA
+West Bengal,Almora,Dhauladevi,phc,Bhanoli APHC,NA,29.497859,79.955642,Y,Physical,Rural,Public,NA
+West Bengal,Garhwal,Jaiharikhal,phc,Cant Hospital Lansdowne,NA,29.500422,78.410828,Y,Physical,Urban,Public,NA
+West Bengal,Champawat,Barakote,phc,Barakote,NA,29.5025797,79.9625114,Y,Physical,Rural,Public,NA
+West Bengal,Almora,Lamgara,phc,Lamgara PHC,NA,29.50665,79.7528,Y,Physical,Rural,Public,NA
+West Bengal,Hardwar,Bahadrabad,phc,"APHC,Laldhang",NA,29.51,78.18,Y,Physical,Rural,Public,NA
+West Bengal,Hardwar,Bahadrabad,phc,"APHC,Bihari Nagar at Sahdevpur",NA,29.51,78.01,Y,Physical,Rural,Public,NA
+West Bengal,Pithoragarh,Bin,phc,PHC Egyardevi,NA,29.5283075,80.160301,Y,Physical,Urban,Public,NA
+West Bengal,Nainital,Haldwani,phc,PHC Bitoriya No.1,NA,29.53764,79.35607,Y,Physical,Rural,Public,NA
+West Bengal,Nainital,Haldwani,phc,PHC Pandey Newar,NA,29.53764,79.35607,Y,Physical,Rural,Public,NA
+West Bengal,Nainital,Haldwani,phc,PHC Daulatpur,NA,29.53764,79.35607,Y,Physical,Rural,Public,NA
+West Bengal,Pithoragarh,Kanalichhina,phc,APHC Muwani,NA,29.5466,80.2088,Y,Physical,Rural,Public,NA
+West Bengal,Pithoragarh,Munsyari,phc,Madkot,NA,29.5556,80.2297,Y,Physical,Rural,Public,NA
+West Bengal,Almora,Dhauladevi,phc,Dholadevi,NA,29.55935,79.9335,Y,Physical,Rural,Public,NA
+West Bengal,Hardwar,Bahadrabad,phc,"APHC,Pathri Roh Suman Nagar",NA,29.56,78.01,Y,Physical,Rural,Public,NA
+West Bengal,Hardwar,Bahadrabad,phc,"APHC,Kota Muradnagar",NA,29.57,77.57,Y,Physical,Rural,Public,NA
+West Bengal,Hardwar,Bahadrabad,phc,"APHC,Pherupur",NA,29.57,78,Y,Physical,Rural,Public,NA
+West Bengal,Garhwal,Yamkeshwar,phc,Kimsar APHC,NA,29.570492,78.212959,Y,Physical,Rural,Public,NA
+West Bengal,Garhwal,Ekeshwar,phc,Naugaonkhal APHC,NA,29.577713,78.518139,Y,Physical,Rural,Public,NA
+West Bengal,Hardwar,Bahadrabad,phc,"APHC,Roshnabad",NA,29.58,78.03,Y,Physical,Rural,Public,NA
+West Bengal,Pithoragarh,Munakot,phc,PHC Badalu,NA,29.5828,80.2181,Y,Physical,Rural,Public,NA
+West Bengal,Pithoragarh,Munakot,phc,APHC Badabey,NA,29.5828,80.2181,Y,Physical,Rural,Public,NA
+West Bengal,Pithoragarh,Munakot,phc,APHC Jhulaghat,NA,29.58286,80.21817,Y,Physical,Rural,Public,NA
+West Bengal,Garhwal,Yamkeshwar,phc,Yamkeshwar PHC,NA,29.586305,78.250664,Y,Physical,Rural,Public,NA
+West Bengal,Bageshwar,Bageshwar,phc,Chani,NA,29.58635,79.7372,Y,Physical,Rural,Public,NA
+West Bengal,Bageshwar,Bageshwar,phc,Kafligair,NA,29.58635,79.7372,Y,Physical,Rural,Public,NA
+West Bengal,Nainital,Ramnagar,phc,Bailparav,NA,29.58661,79.60553,Y,Physical,Rural,Public,NA
+West Bengal,Garhwal,Ekeshwar,phc,Patisain PHC,NA,29.588781,78.468472,Y,Physical,Rural,Public,NA
+West Bengal,Hardwar,Bahadrabad,phc,"APHC,Aurangabad",NA,29.59,78.03,Y,Physical,Rural,Public,NA
+West Bengal,Almora,Bhasiyachhana,phc,Barechhina APHC,NA,29.59756,79.663192,Y,Physical,Rural,Public,NA
+West Bengal,Almora,Bhikiyasen,phc,Shyalkote APHC,NA,29.62694,79.2025,Y,Physical,Rural,Public,NA
