@@ -6,7 +6,7 @@ where measurement_concept_id in(select concept_id from concept where concept_nam
  	(select entity.id from entity,concept where concept.concept_name like '%mort%' and  entity.source_concept_id=concept.concept_id)\
  group by state order by state asc"
 
- care_sites= "create view care_sites as\
+care_sites= "create view care_sites as\
  select a.concept_name as state, count(*) as care_sites  from concept as a,measurements \
  where measurement_concept_id in(select concept_id from concept where concept_name='state') \
  and a.concept_id= measurement_value_concept_id\

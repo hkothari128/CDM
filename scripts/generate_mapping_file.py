@@ -9,7 +9,7 @@ id_dict={}
 map_table=[]
 
 
-class mapper():
+class mapper():	# class to model on record in mapping file
 	src_column=""
 	src_table=""
 	dest_column=""

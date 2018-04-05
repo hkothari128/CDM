@@ -2,100 +2,98 @@ import csv
 import psycopg2
 import os
 
-conn_string = "host='localhost' dbname='MyCDM' user='developer' password='developer'"
+conn_string = "host='localhost' dbname='MyCDM' user='developer' password='developer'" # connection string
 conn = psycopg2.connect(conn_string)
-cursor = conn.cursor()
-source=""
-mapping=list(tuple())
-source_concept_id=None
-def read_map():
-	with open("mapping1.csv") as csv_file:
+cursor = conn.cursor()	
+source=""				# file object for source file
+mapping=list(tuple())	# stores mapping file
+source_concept_id=None # stores concept_id of current file being inserted
+
+def read_map():	# reads mapping file into a dictionary
+	with open("mapping.csv") as csv_file:
 		reader=csv.reader(csv_file)
 		for row in reader:
 			mapping.append(row)
 	mapping.remove(mapping[0])	
-	#print(mapping)
+	
 
 
-def put_entity(item,source_column):
-	if not check(item,"concept","concept_name")==0:
-		print("ENTITY exists, but in another domain")
-		q="select concept_id from concept where concept_name='"+ item +"'"
+def put_entity(item,source_column):	# inserts an entity into the CDM
+	if not check(item,"concept","concept_name")==0:	#if given item is not a concept
+		#print("ENTITY exists, but in another domain")
+		q="select concept_id from concept where concept_name='"+ item +"'"	#get concept_id for item
 		cursor.execute(q)
 		concept_id=cursor.fetchone()[0]
-		print("SRC ",source_concept_id)
+		#print("SRC ",source_concept_id)
 		q="insert into entity(entity_concept_id,identified_by,source_concept_id) values("+str(concept_id)+",'"+ item.lower() +"',"+ str(source_concept_id) +") returning id"
 		cursor.execute(q)
 		entity_id=cursor.fetchone()[0]
 
-		add_measurement(item,item,source_column,"measurement_value_concept_id")
+		add_measurement(item,item,source_column,"measurement_value_concept_id")	# save entity as a measurement as well, since its also a mapped column
 		
 		conn.commit()
 
-	elif check(item,"entity","identified_by")==0:
+	elif check(item,"entity","identified_by")==0:	#  if item is a concept but not an entity 
 		print("adding new entity")
-		q="insert into concept(concept_name,domain_id)  values(%s,%s) returning concept_id;"
+		q="insert into concept(concept_name,domain_id)  values(%s,%s) returning concept_id;" # add concept for that entity, domain 'ENTITY'
 		cursor.execute(q,(item,'Entity'))
 		concept_id=cursor.fetchone()[0]
-		print("SRC ",source_concept_id)
+		#print("SRC ",source_concept_id)
 
 		q="insert into entity(entity_concept_id,identified_by,source_concept_id) values("+str(concept_id)+",'"+ item.lower() +"',"+ str(source_concept_id) +") returning id"
 		cursor.execute(q)
 		entity_id=cursor.fetchone()[0]
 
-		add_measurement(item,item,source_column,"measurement_value_concept_id")
+		add_measurement(item,item,source_column,"measurement_value_concept_id") # save entity as a measurement as well, since its also a mapped column
 		
 		conn.commit()
 
 	else:
 		print("ENTITY ALREADY EXISTS")
 
-def add_concept(item,domain):
+def add_concept(item,domain):	# adds a new concept to concept table
 	if check_row([item,domain],"concept",["concept_name","domain_id"])==0:
 		q="insert into concept(concept_name,domain_id)  values(%s,%s) returning concept_id;"
 		cursor.execute(q,(item.lower(),domain.lower()))
 		concept_id=cursor.fetchone()[0]
-		print(concept_id)
 		conn.commit()
-		add_domain(domain)
+		add_domain(domain)	
 	else:
 		cursor.execute("select concept_id from concept where concept_name='"+ item.lower()+"' and domain_id='"+ domain.lower()+"'")
 		concept_id=cursor.fetchone()[0]	
 	return concept_id
 		
 
-def check(item,dest_table,dest_column):
+def check(item,dest_table,dest_column):	# checks if a data item exists in a given column of given table, returns 0 if not exists
 	q="select count(*) from "+ dest_table.lower()+" where "+ dest_column.lower()+"='"+ item.lower() +"'"
 	cursor.execute(q)
 	result=cursor.fetchone()
-	#print(result[0])
 	return result[0]
 
-def check_row(items,dest_table,dest_columns):
+def check_row(items,dest_table,dest_columns):	# check if a provided row exists in a provided table, returns 0 if not exists
 	q="select count(*) from "+ dest_table.lower()+" where "
 	for i in range(len(items)-1):
 		q+=dest_columns[i].lower()+"='"+ items[i].lower() +"' and "
 	q+=dest_columns[-1].lower()+"='"+ items[-1].lower() +"'"		
 	cursor.execute(q)
 	result=cursor.fetchone()
-	#print(result[0])
 	return result[0]
 
-def add_domain(domain):
-	if check(domain,"domain","domain_id")==0:
-		q="insert into concept(concept_name,domain_id)  values(%s,%s) returning concept_id;"
+def add_domain(domain):		#adds a new domain
+	if check(domain,"domain","domain_id")==0:	#checks if domain already exists
+		q="insert into concept(concept_name,domain_id)  values(%s,%s) returning concept_id;"	#insert domain as a concept in concept table with domain 'METADATA'
 		cursor.execute(q,(domain,'Metadata'))
 		concept_id=cursor.fetchone()[0]
-		q="insert into domain values('"+ str(domain).lower() +"',"+ str(concept_id) +")"
+		q="insert into domain values('"+ str(domain).lower() +"',"+ str(concept_id) +")"		# insert domain into domain table
 		cursor.execute(q)
 		conn.commit()
 
-def get_domains():
+def get_domains():		# obtains domains from user
 
 	for row in mapping:
-		domain=input("Enter domain for "+row[0]+" :")
-		if not check(row[0],"concept","concept_name")==0 :
-			q="select count(*) from  concept where concept_name= '"+ row[0] +"' and domain_id='"+ domain +"'"
+		domain=input("Enter domain for "+row[0]+" :")		#gets domain for source column item
+		if not check(row[0],"concept","concept_name")==0 :  # checks if that item already exists
+			q="select count(*) from  concept where concept_name= '"+ row[0] +"' and domain_id='"+ domain +"'"  #checks if the item has domain same as given domain
 			cursor.execute(q)
 			result=cursor.fetchone()
 			if(not result==0):
@@ -106,23 +104,13 @@ def get_domains():
 
 		else:
 			add_domain(domain)	
-			'''if check(domain,"domain","domain_id")==0:
-				print("domain nai hai")
-				q="insert into concept(concept_name,domain_id)  values(%s,%s) returning concept_id;"
-				cursor.execute(q,(domain,'Metadata'))
-				concept_id=cursor.fetchone()[0]
-				q="insert into domain values(%s,%s,"+ str(concept_id) +")"
-				cursor.execute(q,(domain,domain))
-				conn.commit()
-				print(concept_id)
-			else:
-				print("domain hai")'''
+			
 
 		q="insert into concept(concept_name,domain_id)  values(%s,%s)"
 		cursor.execute(q,(row[0].lower(),domain.lower()))
 		conn.commit()
 	
-def temp_domains():
+def temp_domains():		# for batch insert
 	from collections import OrderedDict
 	domains=OrderedDict({'id':"identifier",
 			'state':'location',
@@ -151,24 +139,24 @@ def temp_domains():
 
 
 
-def add_measurement(item,entity,source_column,dest_column):
-	print("in measurements: ",entity)
-	cursor.execute("select id from entity where identified_by = '"+ entity +"'")
+def add_measurement(item,entity,source_column,dest_column):			# adds measurement
+	
+	cursor.execute("select id from entity where identified_by = '"+ entity +"'")	# gets entity id
 	entity_id=cursor.fetchone()[0]
-	print(source_column)
-	cursor.execute("select concept_id from concept where concept_name='"+ source_column+"'")
+	
+	cursor.execute("select concept_id from concept where concept_name='"+ source_column+"'")	#gets concept id of what is to be measured
 	measurement_concept_id=cursor.fetchone()[0]
 
-	if dest_column=="measurement_value_as_value":
+	if dest_column=="measurement_value_as_value":	#if direct value is to be inserted into measurement
 		q="insert into measurements(entity_id,measurement_concept_id,measurement_value_as_value)\
-		 values("+str(entity_id)+","+str(measurement_concept_id)+",'"+ item.lower() +"')"
+		 values("+str(entity_id)+","+str(measurement_concept_id)+",'"+ item.lower() +"')" 		
 		cursor.execute(q)
 		conn.commit()
-	elif dest_column=="measurement_value_concept_id":
-		value=add_concept(item,"Measurement")
+	elif dest_column=="measurement_value_concept_id": #if a concept value is to be inserted into measurement
+		value=add_concept(item,"Measurement")			#value to be inserted is made a concept and concept_id returned
 		#cursor.execute("select concept_id from concept where concept_name='"+ item+"' and domain_id='Measurement'")
 		#value=cursor.fetchone()[0]
-		print("MEASUREMENT_ID: ",measurement_concept_id)
+		
 		q="insert into measurements(entity_id,measurement_concept_id,measurement_value_concept_id)\
 		 values("+str(entity_id)+","+str(measurement_concept_id)+","+ str(value).lower() +")"
 		cursor.execute(q)
@@ -176,53 +164,48 @@ def add_measurement(item,entity,source_column,dest_column):
 
 
 
-def insert():
-	reader=csv.reader(source)
+def insert():				#insertion script
+	reader=csv.reader(source)		# read source file
 	
 	headers=next(reader)
 	headers=[header.lower().strip() for header in headers]
-	print(headers[:5])
-	count=1
-	for record in reader:
+	
+	for record in reader:		# loop through every record in source file
 		entity=""
-		for row in mapping:
+		for row in mapping:		# check for mappings
 			source_column=row[0].lower()
 			dest_column=row[2].lower()
 			dest_table=row[3].lower()
 			src_index=headers.index(source_column)
-			item=record[src_index].lower()
-			print(dest_table,dest_column,entity)
-			if(dest_table=="entity" and dest_column=="identified_by"):
+			item=record[src_index].lower()	#find item in record for mapped column
+			
+			if(dest_table=="entity" and dest_column=="identified_by"):	# if entity is to be inserted
 				entity=item
 				put_entity(item,source_column)
 				
 
-			elif(dest_table=="measurements"):
+			elif(dest_table=="measurements"):	# if measurement is to be inserted
 				add_measurement(item,entity,source_column,dest_column)
 
-			#print(row)
-			#print("item: ",record[column_number_in_src])
 			
-			#print(source_column,":",column_number_in_src)
-		
 	
-def initialize(file):
+def initialize(file):					# add source file to source table
 	source_table=file.lower()
 
-	print ("\n\n\033[1;32;40m",source_table,"\033[0;37;40m")
-	add_domain("Source")
+	#print ("\n\n\033[1;32;40m",source_table,"\033[0;37;40m")
+	add_domain("Source")				
 	global source_concept_id
-	source_concept_id = add_concept(source_table,"Source")
+	source_concept_id = add_concept(source_table,"Source")	# get concept_id of added source_file
 	cursor.execute("insert into source(source_name,source_concept_id,url) values('"+ source_table.lower() + "',"+ str(source_concept_id).lower() +",null)")
 	conn.commit()	
 
-'''if __name__ == '__main__':
-	path="../data/mortality/"
+'''if __name__ == '__main__':					# for batch insert
+	path="../data/active/mortality/mort_new/"
 	files=os.listdir(path)
 	files=[f for f in files if ".py" not in f ]
 	read_map()
 
-	for file in files:
+	for file in files:			
 		if file.startswith("."):
 			continue
 		source=open(path+file)
@@ -231,8 +214,8 @@ def initialize(file):
 		#get_domains()
 		insert()
 		
-	source.close()	
-'''
+	source.close()	'''
+
 if __name__ == '__main__':
 	path="../data/active/"
 	file="geocode_refined.csv"
