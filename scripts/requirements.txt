@@ -112,7 +112,7 @@ pyparsing==2.2.0
 python-apt==1.1.0b5
 python-dateutil==2.6.0
 python-debian==0.1.29
-python-gnupg==0.3.8
+python-gnupg==0.4.4
 python-http-client==2.2.1
 python-magic==0.4.13
 python-poppler-qt4==0.24.0
