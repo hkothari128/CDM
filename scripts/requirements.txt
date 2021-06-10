@@ -28,7 +28,7 @@ cryptography==1.8.1
 cssselect==1.0.1
 defer==1.0.6
 distro-info===0.14build1
-Django==1.9.13
+Django==2.2.24
 django-admin==1.0.2
 django-autocomplete-light==3.2.2
 django-core==1.4.1
